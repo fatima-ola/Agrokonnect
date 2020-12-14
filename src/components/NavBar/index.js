@@ -1,52 +1,58 @@
 import React from 'react';
 import 'materialize-css';
-import { Navbar, Icon} from 'react-materialize';
-import {NavLink} from 'react-router-dom'
+// import { Navbar, Icon, Row, Col} from 'react-materialize';
+// import {NavLink} from 'react-router-dom'
 
 
 const Index =()=> {
     return (
-        <div>
-           <Navbar 
-            alignLinks="right"
-            brand={<a className="brand-logo black-text" href="/">TutChit</a>}
-            id="mobile-nav"
-            menuIcon={<Icon>menu</Icon>}
-            options={{
-              draggable: true,
-              edge: 'left',
-              inDuration: 250,
-              onCloseEnd: null,
-              onCloseStart: null,
-              onOpenEnd: null,
-              onOpenStart: null,
-              outDuration: 200,
-              preventScrolling: true
-            }}
-            className="white z-depth-0"
-            >
-            <NavLink to="/" className="black-text">
-                Home
-            </NavLink>
-            <a href="#about" className="black-text">
-                About
-            </a>
-            <a href="#feature" className="black-text">
-                Feature
-            </a>
-            <a href="testimonial" className="black-text">
-                Testimonial
-            </a>
-            <NavLink to="/signin" className="black-text">
-                Login
-            </NavLink>
-            <NavLink to="/signup" className="black-text">
-                Signup
-            </NavLink>
-            </Navbar> 
-          
+       <div class="section-wrapper">
+            <header class="header">
+                <div class="container">
+                <a href="#" class="header-icon">
+                    <i class="icons">menu</i>
+                </a>
+                <a href="#" class="header-logo"><img src="agrokonnect.png" width="100%"/></a>
+                <nav class="menu">
+                    <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">AboutUs</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Products</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Testimonial</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Shop</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Contact</a>
+                    </li>
+                    </ul>
+                </nav>
+                <a href="#" class="header-search">
+                    <i class="material-icons">search</i>
+                </a>
+                <a href="#" class="header-search">
+                    <i class="material-icons">shopping_cart</i>
+                </a>
+                <button>REGISTER</button>
+                <button>LOGIN</button>
+                </div>
+            </header>
         </div>
+
     )
 }
 
 export default Index
+
+

@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+
+nav{
+    color: black !important;
+    background-color:white !important;
+    box-shadow: none!important;
+}
+  
+.container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-basis: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.header-icon {
+    display: none;
+}
+
+.header-search {
+    color: black;
+}
+
+.header-logo {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: inherit;
+    color: white;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+  
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+}
+  
+     
+.menu-item  a {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: inherit;
+    padding: 0 1rem;
+    color:black;
+    text-transform: capitalize;
+}
+  
+i {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 2rem;
+    margin: 0 auto;
+  }
+
+  .section-container {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .section-wrapper {
+    height: 100%;
+    transition-duration: 0.3s;
+    transform: translateX(0px);
+  }
+
+  .header {
+    position: static;
+  }
+
+  .icons {
+    display: block;
+    cursor: pointer;
+    color: white;
+  }
+    
+    .menu {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 20rem;
+        background-color: white;
+        /* box-shadow: box-shadow; */
+        transform: translateX(-20rem);
+    }
+
+     .menu-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .menu-item {
+        width: 100%;
+        padding: 1rem;
+      }
+        .menu-item:hover {
+          background: darken(white, 10);
+        }
+
+        .menu-item a {
+          color: dark;
+        }
+
+        i {
+          position: relative;
+          display: inline-block;
+          top: 0.3rem;
+          margin-right: 1rem;
+          color: darken(white, 50);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+          }
+    
+     
+    
+     
+        .section-wrapper {
+          transform: translateX(20rem);
+        }
+    }
+
+    
+
+
+
+
+
+  
+  
+
