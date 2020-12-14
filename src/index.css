@@ -1,13 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.hero-img{
+  height: 500px !important;
+  opacity: 0.7;
+}
+.hero-button{
+  background-color: #E9DA5D !important;
+  color: black !important;
+ padding-top: 10px !important;
+ height: 70px !important;
+ font-weight: bold !important;
+ font-size: 14px !important;
+ border-radius: 5px !important;
+}
+.hero-button:hover{
+  background-color: #76aa76 !important;
+  color: white !important;
+}
+.button-h5{
+  font-size: 18px;
+  font-family: "Kalam", cursive !important;
+  font-weight: bold;
+  letter-spacing: .1em;
+
+}
+.button-h1{
+  font-size: 50px !important;
+  font-family: -apple-system, BlinkMacSystemFont !important;
+  font-weight: bold;
+
+}
+.button-h6{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont !important;
+  font-weight: bold;
+  margin-bottom: 5% !important;
+  letter-spacing: .1em;
+}
+.button-veggie{
+  font-size: 42px !important;
+  margin-top: 4% !important;
+  margin-bottom: 4% !important;
+  font-family: -apple-system, BlinkMacSystemFont !important;
+  font-weight: bold !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* footer */
+.footer{
+  margin: 5% 10% 0px 10%;
+}
+.footer-span{
+  font-weight: lighter;
+}
+.footer-logo{
+display: flex;
+}
+.footer-img{
+  width: 45px;
+}
+.footer-icon{
+  display: flex;
+}
+.footericon-icon{
+  height: 20px;
+  margin-right: 10px;
+}
+.footer-logo{
+  margin-top: 5px;
+}
+.footer-logo > h6{
+  font-weight: bold;
+}
+.button-icon{
+  background-color: #E9DA5D !important;
+  display:block;
+  height: 52px !important;
+  width: 52px !important;
+  border-radius: 50% !important;
+}
+.sendicon-icon{
+ height: 45px ;
+ padding-top: 12px;
+ padding-left: 10px;
+}
+.button-icon:hover{
+  background-color: #76aa76 !important;
+}
+.newsletter-p{
+  font-size: 0.9rem;
+  color: grey;
+}
+.socials{
+  display: flex;
+  border-top: 1px solid #e1e1e1;
+}
+.socials-icon{
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.socials-p{
+  margin-top:15px;
+  margin-right: 10px;
+}
+.div-h5{
+font-weight: bold;
+}
+.second-footer{
+  background-color: whitesmoke;
+  margin-top: 10%;
+  padding-top: 3%;
+  padding-left: 10%;
+ height: 130px !important;
+}
+.privacy{
+  margin-left: 85px !important ;
+}
+.secondfooter-icon{
+  padding-left: 40px !important;
+  margin-top: 5px !important;
+}
+.second-footericon{
+  height: 40px;
+  margin-left: 15px;
+  margin-bottom: 0px;
 }
