@@ -1,5 +1,6 @@
 import React from 'react';
 import 'materialize-css';
+import Button from '../Button/index'
 // import { Navbar, Icon, Row, Col} from 'react-materialize';
 // import {NavLink} from 'react-router-dom'
 
@@ -44,8 +45,8 @@ const Index =()=> {
                 <a href="#" class="header-search">
                     <i class="material-icons">shopping_cart</i>
                 </a>
-                <button>REGISTER</button>
-                <button>LOGIN</button>
+                <Button text="Register"></Button>
+                <Button text="Login"></Button>
                 </div>
             </header>
         </div>
