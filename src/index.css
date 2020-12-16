@@ -279,6 +279,24 @@ i {
       margin-left: 15px;
       margin-bottom: 0px;
     }
+
+    /* Description */
+    .description-image{
+      background-image: url("https://livedemo00.template-help.com/wt_prod-10492/theme/images/parallax-3.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      height: 450px;
+      margin-top: 5% !important;
+      padding: 7% 5% 3% 5%!important;
+    }
+    .description-image-h5 {
+      padding-top: 2% !important;
+      font-weight: bold !important;
+      font-size: 25px !important;
+      color: white !important
+    }
     
 
 
