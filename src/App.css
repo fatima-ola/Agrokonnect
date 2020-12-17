@@ -1,0 +1,19 @@
+.fruit-img{
+  max-width: 100%;
+  padding-left: 30%;
+  text-align: center;
+}
+.p-text{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: inline;
+}
+#distinction{
+  font-family: 'Caveat', cursive;
+  font-size: large;
+}
+.parent-div{
+  display: flex;
+}
+.child-div{
+  padding-right: 10px;
+}
