@@ -1,7 +1,7 @@
 import React from 'react';
 import 'materialize-css'
 
-import { Row, Col, Slide, Slider, Caption, Select, Icon, Button} from 'react-materialize'
+import {  Slide, Slider, Caption, Button} from 'react-materialize'
 
 
 
