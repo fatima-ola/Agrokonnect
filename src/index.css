@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Poppins:wght@600&display=swap');
 *{
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +7,7 @@
    
 }
 
+/**Navabar styling start**/
 nav a{
   color: #76aa6f!important;
 }
@@ -27,9 +29,9 @@ nav a{
 a{
   text-transform: uppercase;
 }
+/**Navabar styling end**/
 
-
-/**Hero section and footer style***/
+/**Hero section styling***/
 
 .hero-img{
   height: 500px !important;
@@ -75,8 +77,70 @@ a{
   font-family: -apple-system, BlinkMacSystemFont !important;
   font-weight: bold !important;
 }
+
+/* Benefit styling starts */
+
+.benefit-section{
+  padding: 100px 0;
+}
+
+.slider .slides{
+  background-color: transparent!important;
+}
+
+.rightcol{
+  background-image: url('https://res.cloudinary.com/fatimaola/image/upload/v1608152512/piggyvest/images/bg-pattern_crajuk.jpg');
+}
+
+.product-price-old {
+  color: #a3a3a3;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.product-price-new {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #76aa6f;
+}
+
+.imagecaption{
+  top: 90%!important;
+}
+.collapsible{
+  box-shadow: none!important;
+  border: none!important;
+}
+
+.h4-title{
+  letter-spacing: .05em;
+  text-transform: none;
+  font-family: "Kalam", cursive;
+  color: #76aa6f;
+}
+
+.faq{
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.leftcol{
+  padding: 0 15px;
+}
+
+.drop{
+  background: #e9da5d;
+ border-radius: 70%;
+}
+/* Benefit styling ends */
     
-/* footer */
+/* footer  starts*/
+
 .footer{
   margin: 5% 10% 0px 10%;
 }
@@ -157,11 +221,4 @@ font-weight: bold;
   margin-bottom: 0px;
 }
 
-
-
-
-
-
-  
-  
-
+/* footer  ends*/

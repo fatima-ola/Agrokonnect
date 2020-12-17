@@ -11,7 +11,7 @@ const Index = () => {
         <Row>
             <Col m={4} s={12}>
                 <div className="footer-logo">
-                <img src="https://img.icons8.com/plasticine/2x/26e07f/leaf.png" alt="footerimg" className="footer-img"/>
+                <img src="logo.png" alt="footerimg" className="footer-img"/>
                 <h6 className="black-text">
                     AgroKonnect<br/>
                    <span className="footer-span"> Organic Store</span>

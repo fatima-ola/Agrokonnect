@@ -42,9 +42,6 @@ const Index =()=> {
             <NavLink to="/signin" className="black-text">
                 Shop
             </NavLink>
-            <NavLink to="/signup" className="black-text">
-                Contact
-            </NavLink>
             <a href="#home" className="header-search">
                 <Icon className="material-icons">search</Icon>
             </a>
