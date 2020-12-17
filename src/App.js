@@ -1,7 +1,5 @@
-import "./App.css";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Landing from "./components/Landing/index";
 import React from 'react';
+import "./App.css";
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Landing from './components/Landing/index';
 
