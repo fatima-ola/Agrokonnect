@@ -267,6 +267,56 @@ a{
   color: #76aa6f;
 }
 
+    /* form */
+.signup{
+  width: 40%;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 4px 2px rgb(41, 173, 118);
+}
+input{
+  width: 100%;
+  padding: 10px 12px;
+}
+.signup-title{
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: green ;
+  border-bottom: grey !important;
+  margin-bottom: 10px;
+}
+.buttonsignup{
+  width: 40%;
+  margin-bottom: 20px;
+  margin-left: 30%;
+  margin-top: 20px;
+  border-radius: 5px !important;
+}
+.signup-p{
+  margin-left: 20%;
+  color: grey;
+  margin-bottom: 10px;
+}
+.signup-icon{
+  width: 30px;
+}
+.div-signup-icon{
+  margin: 15px 0px 10px 40%;
+}
+.user-icon{
+  width: 20px;
+  margin-left: 10px;
+}
+.login-image{
+  width: 30%;
+  height: 70%;
+  border-radius: 25px;
+  margin-left: 30%;
+  margin-bottom: 7%;
+}
+  
 .faq{
   margin-top: 10px;
   font-family: 'Poppins', sans-serif;
@@ -364,5 +414,4 @@ font-weight: bold;
   margin-left: 15px;
   margin-bottom: 0px;
 }
-
 /* footer  ends*/
