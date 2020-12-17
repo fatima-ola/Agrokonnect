@@ -8,9 +8,11 @@ const App =()=> {
    
     <BrowserRouter>
         <Switch>
+
           <Route exact path="/">
             <Landing />
           </Route>
+
         </Switch>
       </BrowserRouter>
   
