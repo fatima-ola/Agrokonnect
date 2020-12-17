@@ -9,7 +9,7 @@ const Index =()=> {
         <div>
            <Navbar 
             alignLinks="right"
-            brand={<a className="brand-logo black-text" href="/">TutChit</a>}
+            brand={<a className="brand-logo black-text" href="/">AgroKonnect</a>}
             id="mobile-nav"
             menuIcon={<Icon>menu</Icon>}
             options={{
@@ -44,7 +44,7 @@ const Index =()=> {
                 Signup
             </NavLink>
             </Navbar> 
-          
+           
         </div>
     )
 }

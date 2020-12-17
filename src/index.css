@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: opx;
+}
+
+.errormsg{
+    color: red;
+    text-align: center;
+    font-size: 20px;
+}
+
+.signup-title, .signin-title{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(14, 26, 14);
+}
+
+.signin, .signup{
+    width: 40%;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 4px 2px rgba(14, 255, 14, 0.459);  
+}
+
+
+input{
+    width: 100%;
+    padding: 10px 12px;
+}
+
+
+.buttonsignup, .buttonlogin{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .signin, .signup{
+        width: 80%;
+        margin: 50px auto;
+        padding: 20px;
+        box-shadow: 0 0 4px 2px rgba(14, 255, 14, 0.459);  
+    }
+   
+}   
+    
