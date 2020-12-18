@@ -10,7 +10,7 @@ const Index = () => {
         <div className="container formcontainer">
           <form >
                 <div className="signup">
-                    <NavLink to ="/" className="signup-title "><img src="logo.png" alt="logo-image" className="footer-img" />Sign Up as a Farmer</NavLink>
+                    <NavLink to ="/" className="signup-title ">Sign Up as a Farmer</NavLink>
                     <Input
                      placeholder="Enter First Name"
                      type="text" 

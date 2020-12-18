@@ -13,7 +13,7 @@ const Index = () => {
         <div className="container formcontainer">
         <form >
                 <div className="signup">
-                    <NavLink to ="/" className="signup-title "><img src="logo.png" alt="logo-image" className="footer-img" />Sign Up as a User</NavLink>
+                    <NavLink to ="/" className="signup-title ">Sign Up as a User</NavLink>
                   
                     <Input
                      placeholder="Enter First Name"
@@ -58,7 +58,7 @@ const Index = () => {
                     <Button  className="buttonsignup red" text="SIGNUP WITH GOOGLE"/>
                      <Button  className="buttonsignup blue" text="SIGNUP WITH FACEBOOK"/>      
                         
-                    <p className="signup-p">You're a Farmer? <NavLink href = "/signup" className="green-text">Sign Up here</NavLink>
+                    <p className="signup-p">You're a Farmer? <NavLink to = "/signup" className="green-text">Sign Up here</NavLink>
                      </p>
                 
                     <p className="center-align">Already have an account? <NavLink to = "/login">Log in</NavLink></p>

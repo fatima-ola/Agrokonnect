@@ -3,9 +3,6 @@ import {NavLink, } from 'react-router-dom'
 import Input from '../TextInput/index';
 import Button from '../Button/index';
 
-
-
-
 const Index = () => {
 
     return (
@@ -13,7 +10,7 @@ const Index = () => {
 
           <form>
                 <div className="signup">
-                    <NavLink to ="/" className="signup-title "><img src="logo.png" alt="logo-image" className="footer-img" />Login</NavLink>                 
+                    <NavLink to ="/" className="signup-title "><img src="agrokonnecc.png" alt="logo-image" className="form-img" /></NavLink>                 
                     <Input
                      placeholder="Enter Email Address"
                      type="email" 
@@ -26,12 +23,9 @@ const Index = () => {
                      name="password"
                      label="Password"
                     />             
-                    <Button  className="buttonsignup green">
-                        Login
-                    </Button>
-                        
-                
-                    <p className="center-align">Already have an account? <a href = "/login">Log in</a></p>
+                    <Button  className="buttonsignup green" text=" Login"/>
+                                        
+                    <p className="center-align">Don't have an account? <NavLink to = "/signup">Sign Up</NavLink></p>
                      
                 </div>
             </form>
