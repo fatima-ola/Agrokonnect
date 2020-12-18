@@ -10,7 +10,7 @@ const Index = () => {
 
           <form>
                 <div className="signup">
-                    <NavLink to ="/" className="signup-title "><img src="agrokonnecc.png" alt="logo-image" className="form-img" /></NavLink>                 
+                    <NavLink to ="/" className="signup-title "><img src="agrokonnecc.png" alt="logo-img" className="form-img" /></NavLink>                 
                     <Input
                      placeholder="Enter Email Address"
                      type="email" 
