@@ -1,10 +1,10 @@
 import React from 'react';
-import {TextInput,} from 'react-materialize'
+import {TextInput} from 'react-materialize'
 
 
 
 const Index = (props) => {
-    const {label, placeholder, name, value, type, } = props
+    const {label, placeholder, name, value, type } = props
     return (
         <div>
 

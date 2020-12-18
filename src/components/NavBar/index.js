@@ -25,7 +25,7 @@ const Index =()=> {
               outDuration: 200,
               preventScrolling: true
             }}
-            className="white z-depth-0"
+            className="white z-depth-1"
             >
             <NavLink to="/" className="black-text">
                 Home
@@ -48,12 +48,12 @@ const Index =()=> {
             <a href="#home" className="header-search">
                 <Icon className="material-icons">shopping_cart</Icon>
             </a>
-           
-           <span className="agrobtn">
-            <Button text="Register"className="regbtn" />
-            <Button text="Login" className="regbtn" />
-           </span>
-        
+           <NavLink to="/signup" className="regbtn"> 
+               <Button text="Register" className="thebtn"/>
+            </NavLink>
+            <NavLink to="/login" className="regbtn">
+                <Button text="Login" className="thebtn" />
+            </NavLink> 
             </Navbar>
         
     </div>
