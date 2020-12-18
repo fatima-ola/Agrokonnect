@@ -69,6 +69,7 @@ a{
   margin-bottom: 5% !important;
   letter-spacing: .1em;
 }
+
 .button-veggie{
   font-size: 42px !important;
   margin-top: 4% !important;
@@ -232,7 +233,7 @@ input{
 
 .buttonsignup{
   width: 100%;
-  margin-bottom: 5px;
+  margin-bottom: 9px;
  
   margin-top: 5px;
   border-radius: 5px !important;
@@ -267,6 +268,20 @@ input{
 label{
   font-size: 1rem!important;
   color: black!important;
+}
+
+select{
+border: 1px solid rgb(118, 118, 118)!important;
+}
+
+.regicon {
+  background-color: white!important;
+  color: rgb(53, 52, 52) !important;
+  transition: none!important;
+}
+
+.form-img{
+  height: 100px;
 }
  
 /* form ends*/  

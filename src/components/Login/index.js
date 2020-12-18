@@ -10,18 +10,23 @@ const Index = () => {
 
           <form>
                 <div className="signup">
-                    <NavLink to ="/" className="signup-title "><img src="agrokonnecc.png" alt="logo-img" className="form-img" /></NavLink>                 
+                    <div className="form-img">
+                   <NavLink to ="/" className="signup-title "><img src="agrokonnecc.png" alt="logo-img"  /></NavLink> 
+                    </div> 
+                    <NavLink to ="/" className="signup-title ">Login</NavLink>              
                     <Input
                      placeholder="Enter Email Address"
                      type="email" 
                      name="email"
                      label="Email Address"
+                     iconName="email"
                    />
                     <Input
                      placeholder="Password"
                      type="password" 
                      name="password"
                      label="Password"
+                     iconName="vpn_key"
                     />             
                     <Button  className="buttonsignup green" text=" Login"/>
                                         
