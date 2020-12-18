@@ -1,42 +1,31 @@
 import React from 'react';
 import {NavLink, } from 'react-router-dom'
-
 import Input from '../TextInput/index';
-import {Checkbox, Button} from 'react-materialize'
-
-
-
+import Button from '../Button/index';
 
 const Index = () => {
 
     return (
-        <div>
+        <div className="container formcontainer">
 
-          <form >
+          <form>
                 <div className="signup">
-                    <NavLink to ="/"><img src="https://livedemo00.template-help.com/wt_prod-10492/theme/images/product-big-4-470x324.png" alt="welcome image" className="login-image" /></NavLink><br/>
-                    
-                    <p><img src="https://img.icons8.com/metro/2x/new-post.png" alt="user-image" className="user-icon" /> Email Address </p>
+                    <NavLink to ="/" className="signup-title "><img src="agrokonnecc.png" alt="logo-image" className="form-img" /></NavLink>                 
                     <Input
                      placeholder="Enter Email Address"
                      type="email" 
                      name="email"
+                     label="Email Address"
                    />
-
-                   <p><img src="https://img.icons8.com/metro/2x/forgot-password.png" alt="user-image" className="user-icon" /> Password </p>
                     <Input
                      placeholder="Password"
                      type="password" 
                      name="password"
-                    />
-                  
-                    
-                     <Button  className="buttonsignup green">
-                        Login
-                    </Button>
-                        
-                
-                    <p className="center-align">Already have an account? <a href = "/login">Log in</a></p>
+                     label="Password"
+                    />             
+                    <Button  className="buttonsignup green" text=" Login"/>
+                                        
+                    <p className="center-align">Don't have an account? <NavLink to = "/signup">Sign Up</NavLink></p>
                      
                 </div>
             </form>
