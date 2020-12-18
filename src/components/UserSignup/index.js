@@ -1,8 +1,8 @@
 import React from 'react';
 import {NavLink, } from 'react-router-dom'
-
 import Input from '../TextInput/index';
-import {Checkbox, Button} from 'react-materialize'
+import {Checkbox} from 'react-materialize'
+import Button from '../Button/index';
 
 
 
@@ -10,71 +10,58 @@ import {Checkbox, Button} from 'react-materialize'
 const Index = () => {
 
     return (
-        <div>
-
-          <form >
+        <div className="container formcontainer">
+        <form >
                 <div className="signup">
-                    <NavLink to ="/" className="signup-title "><img src="https://img.icons8.com/plasticine/2x/26e07f/leaf.png" alt="leaf-image" className="footer-img" />Sign Up as a User</NavLink>
-                    <p><img src="https://img.icons8.com/material/2x/person-male.png" alt="user-image" className="user-icon" /> FullName</p>
-
+                    <NavLink to ="/" className="signup-title ">Sign Up as a User</NavLink>
+                  
                     <Input
-                     placeholder="Enter FullName" 
+                     placeholder="Enter First Name"
                      type="text" 
-                     name="fullname"
-                    />
+                     name="firstname"
+                     label="First Name"
                      
-                    <p><img src="https://img.icons8.com/metro/2x/new-post.png" alt="user-image" className="user-icon" /> Email Address </p>
+                    />
                     <Input
+                     placeholder="Enter Last Name"
+                     type="text" 
+                     name="lastname"
+                     label="Last Name"
+                     
+                    />
+                     <Input
                      placeholder="Enter Email Address"
                      type="email" 
                      name="email"
+                     label="Email Address"
                    />
-                   <p><img src="https://img.icons8.com/metro/2x/phone.png" alt="user-image" className="user-icon" /> Phone Number</p>
-
                     <Input
                     placeholder="Enter Phone Number" 
                     type="tel" 
                     name="phoneNumber"
-                    />
-
-                   <p><img src="https://img.icons8.com/metro/2x/forgot-password.png" alt="user-image" className="user-icon" /> Password </p>
-                    
+                    label="Phone Number"
+                    /> 
                     <Input
                      placeholder="Password"
                      type="password" 
                      name="password"
-                    />
-                    
-                    <p><img src="https://img.icons8.com/ios-filled/2x/no-key.png" className="user-icon" /> Repeat Password </p>
-                    
-                    <Input
-                     placeholder="Repeat Password"
-                     type="repeatpassword" 
-                     name="repeatpassword"
-                    />
-                    
+                     label="Password"
+                    />  
                     <Checkbox
                     id="Checkbox_3"
                     label="By Clicking Signup, you agree to our Terms and Conditions"
                     value="checkbox"
                     />
-                     <Button  className="buttonsignup green">
-                        CREATE ACCOUNT
-                    </Button>
+                     <Button  className="buttonsignup green" text="CREATE ACCOUNT"/>
                     
                     <p className="center-align">Or</p>
-                    <h6 className="center-align"> Signup with your social media accounts or email address</h6>
-         
-                    <div className="div-signup-icon">
-                    <img src="https://img.icons8.com/color/2x/4a90e2/google-logo.png" alt="google" className="signup-icon" />
-                    <img src="https://img.icons8.com/windows/2x/4a90e2/facebook-f.png" alt="google" className="signup-icon" />
-                    <img src="https://img.icons8.com/fluent/2x/4a90e2/twitter.png" alt="google" className="signup-icon" />
-                    </div>
+                    <Button  className="buttonsignup red" text="SIGNUP WITH GOOGLE"/>
+                     <Button  className="buttonsignup blue" text="SIGNUP WITH FACEBOOK"/>      
                         
-                        <p className="signup-p">You're a Corporate Farmer? <a href = "/signup" className="green-text">Sign Up here</a>
-                        <br/> We have a powerful dedicated features for you! </p>
+                    <p className="signup-p">You're a Farmer? <NavLink to = "/signup" className="green-text">Sign Up here</NavLink>
+                     </p>
                 
-                    <p className="center-align">Already have an account? <a href = "/login">Log in</a></p>
+                    <p className="center-align">Already have an account? <NavLink to = "/login">Log in</NavLink></p>
                      
                 </div>
             </form>
