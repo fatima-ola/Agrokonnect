@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Poppins:wght@600&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+
+/**Navabar styling start**/
+nav a{
+  color: #76aa6f!important;
+}
+
+.brand-logo{
+  top: -40px;
+}
+
+.regbtn{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
+.thebtn{
+  padding-top: 20px;
+}
+
+a{
+  text-transform: uppercase;
+}
+/**Navabar styling end**/
+
+/**Herosection start***/
+
+.hero-img{
+  height: 500px !important;
+  opacity: 0.7;
+}
+.hero-button{
+  background-color: #E9DA5D !important;
+  color: black !important;
+  padding-top: 10px !important;
+  height: 70px !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  border-radius: 5px !important;
+}
+.hero-button:hover{
+  background-color: #76aa76 !important;
+  color: white !important;
+}
+.button-h5{
+  font-size: 18px;
+  font-family: "Kalam", cursive !important;
+  font-weight: bold;
+  letter-spacing: .1em;
+
+}
+.button-h1{
+  font-size: 50px !important;
+  font-family: -apple-system, BlinkMacSystemFont !important;
+  font-weight: bold;
+
+}
+.button-h6{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont !important;
+  font-weight: bold;
+  margin-bottom: 5% !important;
+  letter-spacing: .1em;
+}
+
+.button-veggie{
+  font-size: 42px !important;
+  margin-top: 4% !important;
+  margin-bottom: 4% !important;
+  font-family: -apple-system, BlinkMacSystemFont !important;
+  font-weight: bold !important;
+}
+
+/* Herosection ends */
+
+/* Benefit styling starts */
+
+.benefit-section{
+  padding: 100px 0;
+}
+
+.slider .slides{
+  background-color: transparent!important;
+}
+
+.rightcol{
+  background-image: url('https://res.cloudinary.com/fatimaola/image/upload/v1608152512/piggyvest/images/bg-pattern_crajuk.jpg');
+}
+
+.product-price-old {
+  color: #a3a3a3;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.product-price-new {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #76aa6f;
+}
+
+.hero-img{
+  height: 500px !important;
+  opacity: 0.7;
+}
+.hero-button{
+  background-color: #E9DA5D !important;
+  color: black !important;
+  padding-top: 10px !important;
+  height: 70px !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  border-radius: 5px !important;
+}
+.hero-button:hover{
+  background-color: #76aa76 !important;
+  color: white !important;
+}
+.button-h5{
+  font-size: 18px;
+  font-family: "Kalam", cursive !important;
+  font-weight: bold;
+  letter-spacing: .1em;
+
+}
+.button-h1{
+  font-size: 50px !important;
+  font-family: -apple-system, BlinkMacSystemFont !important;
+  font-weight: bold;
+
+}
+.button-h6{
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont !important;
+  font-weight: bold;
+  margin-bottom: 5% !important;
+  letter-spacing: .1em;
+}
+.button-veggie{
+  font-size: 42px !important;
+  margin-top: 4% !important;
+  margin-bottom: 4% !important;
+  font-family: -apple-system, BlinkMacSystemFont !important;
+  font-weight: bold !important;
+}
+
+.imagecaption{
+  top: 90%!important;
+}
+.collapsible{
+  box-shadow: none!important;
+  border: none!important;
+}
+
+.h4-title{
+  letter-spacing: .05em;
+  text-transform: none;
+  font-family: "Kalam", cursive;
+  color: #76aa6f;
+}
+
+.faq{
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.leftcol{
+  padding: 0 15px;
+}
+
+.drop{
+  background: #e9da5d;
+ border-radius: 70%;
+}
+
+/* Benefit styling ends */
+
+
+/* Description starts */
+.description-image{
+  background-image: url("https://livedemo00.template-help.com/wt_prod-10492/theme/images/parallax-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 450px;
+  margin-top: 5% !important;
+  padding: 7% 5% 3% 5%!important;
+}
+.description-image-h5 {
+  padding-top: 2% !important;
+  font-weight: bold !important;
+  font-size: 25px !important;
+  color: white !important
+}
+    
+/* Description ends*/
+
+/* form start */
+.signup{
+  width: 40%;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0 0 4px 2px rgb(41, 173, 118);
+}
+
+input{
+  width: 100%;
+  padding: 10px 12px;
+}
+
+.signup-title{
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: green ;
+  border-bottom: grey !important;
+  margin-bottom: 10
+}
+
+.buttonsignup{
+  width: 100%;
+  margin-bottom: 9px;
+ 
+  margin-top: 5px;
+  border-radius: 5px !important;
+}
+.signup-p{
+  margin-left: 15%;
+  margin-right: 10px;
+  color: black;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.signup-icon{
+  width: 30px;
+}
+.div-signup-icon{
+  margin: 15px 0px 10px 40%;
+}
+.user-icon{
+  width: 20px;
+  margin-left: 10px;
+}
+.login-image{
+  width: 30%;
+  height: 70%;
+  border-radius: 25px;
+  margin-left: 30%;
+  margin-bottom: 7%;
+}
+.formcontainer{
+  padding-top: 80px;
+}
+label{
+  font-size: 1rem!important;
+  color: black!important;
+}
+
+select{
+border: 1px solid rgb(118, 118, 118)!important;
+}
+
+.regicon {
+  background-color: white!important;
+  color: rgb(53, 52, 52) !important;
+  transition: none!important;
+}
+
+.form-img{
+  height: 100px;
+}
+ 
+/* form ends*/  
+
+/* footer */
+.footer{
+  margin: 5% 10% 0px 10%;
+}
+.footer-span{
+  font-weight: lighter;
+}
+.footer-logo{
+display: flex;
+}
+.footer-img{
+  width: 45px;
+}
+.footer-icon{
+  display: flex;
+}
+.footericon-icon{
+  height: 20px;
+  margin-right: 10px;
+}
+.footer-logo{
+  margin-top: 5px;
+}
+.footer-logo > h6{
+  font-weight: bold;
+}
+.button-icon{
+  background-color: #E9DA5D !important;
+  display:block;
+  height: 52px !important;
+  width: 52px !important;
+  border-radius: 50% !important;
+}
+.sendicon-icon{
+  height: 45px ;
+  padding-top: 12px;
+  padding-left: 10px;
+}
+.button-icon:hover{
+  background-color: #76aa76 !important;
+}
+.newsletter-p{
+  font-size: 0.9rem;
+  color: grey;
+}
+.socials{
+  display: flex;
+  border-top: 1px solid #e1e1e1;
+}
+.socials-icon{
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.socials-p{
+  margin-top:15px;
+  margin-right: 10px;
+}
+.div-h5{
+font-weight: bold;
+}
+.second-footer{
+  background-color: whitesmoke;
+  margin-top: 10%;
+  padding-top: 3%;
+  padding-left: 10%;
+  height: 130px !important;
+}
+.privacy{
+  margin-left: 85px !important ;
+}
+.secondfooter-icon{
+  padding-left: 40px !important;
+  margin-top: 5px !important;
+}
+.second-footericon{
+  height: 40px;
+  margin-left: 15px;
+  margin-bottom: 0px;
+}
+/**footer ends**/
