@@ -1,5 +1,7 @@
 import React from 'react';
 import {Row, Col, Card, Icon, CardTitle} from 'react-materialize';
+import Button from '../../Button/index';
+import MaterialButton from '../../MaterialButton/index';
 
 const Index = () => {
     return(
@@ -10,10 +12,11 @@ const Index = () => {
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
             closeIcon={<Icon>close</Icon>}
             revealIcon={<Icon>more_vert</Icon>}
@@ -30,10 +33,11 @@ const Index = () => {
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
             closeIcon={<Icon>close</Icon>}
             revealIcon={<Icon>more_vert</Icon>}
@@ -50,10 +54,11 @@ const Index = () => {
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
             closeIcon={<Icon>close</Icon>}
             revealIcon={<Icon>more_vert</Icon>}
@@ -70,10 +75,11 @@ const Index = () => {
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
             closeIcon={<Icon>close</Icon>}
             revealIcon={<Icon>more_vert</Icon>}
@@ -92,18 +98,19 @@ const Index = () => {
            s={12}
         >
            <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-    ]}
-                    className="blue-grey darken-1"
-                    closeIcon={<Icon>close</Icon>}
-                    revealIcon={<Icon>more_vert</Icon>}
-                    textClassName="white-text"
-                    header={<CardTitle image="/yellow-garri.jpg"></CardTitle>}
-  >
-                 <h5>Garri</h5>
-                 <h6>$5.00</h6>
+           actions={[<div className="cart-function">
+           <MaterialButton />
+           <Button className="" text="Checkout" />
+           </div>
+         ]}
+              className="blue-grey darken-1"
+              closeIcon={<Icon>close</Icon>}
+              revealIcon={<Icon>more_vert</Icon>}
+              textClassName="white-text"
+              header={<CardTitle image="/yellow-garri.jpg"></CardTitle>}
+>
+            <h5>Garri</h5>
+            <h6>$5.00</h6>
            </Card>
          </Col>
 
@@ -112,10 +119,11 @@ const Index = () => {
   s={12}
 >
         <Card
-    actions={[
-      <a key="1" href="/"><i class="small material-icons" title="search">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-    ]}
+        actions={[<div className="cart-function">
+        <MaterialButton />
+        <Button className="" text="Checkout" />
+        </div>
+      ]}
     className="blue-grey darken-1"
     closeIcon={<Icon>close</Icon>}
     revealIcon={<Icon>more_vert</Icon>}

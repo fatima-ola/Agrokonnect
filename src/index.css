@@ -274,11 +274,11 @@ select{
 border: 1px solid rgb(118, 118, 118)!important;
 }
 
-.regicon {
+/*.regicon {
   background-color: white!important;
   color: rgb(53, 52, 52) !important;
   transition: none!important;
-}
+}*/
 
 .form-img{
   height: 100px;
@@ -367,3 +367,40 @@ font-weight: bold;
   margin-bottom: 0px;
 }
 /**footer ends**/
+
+/** SHOPPING PAGE 8**/
+.shop-page{
+  background-image: url("image/flo-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height:300px;
+ 
+}
+
+.ping{
+  margin:0;
+  padding-top: 2.5em;
+  text-align: center;
+  font-size: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color:#fff;
+  text-shadow: 3px 9px 16px rgba(0, 0, 0, 0.18);
+}
+
+/*User Dashboard*/
+.shop-foot{
+  border-top: 1px dotted #C0C0C0;
+}
+
+.bread-shop .nav-wrapper{
+ background-color:white;
+ color:black !important;
+ text-align:center;
+}
+.breadcrumb:before, .breadcrumb{
+  color:black !important;
+  font-family: sans-serif;
+}
+
+/*End of User Dashboard*/
