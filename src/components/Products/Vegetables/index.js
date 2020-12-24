@@ -1,25 +1,19 @@
 import React from 'react';
-import {Row, Col, Card, Icon, CardTitle} from 'react-materialize';
-import Button from '../../Button/index';
-import MaterialButton from '../../MaterialButton/index';
+import {Row, Col, CardTitle} from 'react-materialize';
+import Card from '../../Card/Index';
+//import Button from '../../Button/index';
+//import MaterialButton from '../../MaterialButton/index';
 
 const Index = () => {
     return(
-      <div className="product-1">
+      <div>
         <Row>
         <Col
           m={3}
           s={12}
         >
           <Card
-          actions={[<div className="cart-function">
-          <MaterialButton />
-          <Button className="" text="Checkout" />
-          </div>
-        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/carrots.png"></CardTitle>}
           >
@@ -33,14 +27,7 @@ const Index = () => {
           s={12}
         >
           <Card
-          actions={[<div className="cart-function">
-          <MaterialButton />
-          <Button className="" text="Checkout" />
-          </div>
-        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/cabbage.jpg"></CardTitle>}
           >
@@ -54,14 +41,7 @@ const Index = () => {
           s={12}
         >
           <Card
-          actions={[<div className="cart-function">
-          <MaterialButton />
-          <Button className="" text="Checkout" />
-          </div>
-        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/spinach.jpg"></CardTitle>}
           >
@@ -75,14 +55,7 @@ const Index = () => {
           s={12}
         >
           <Card
-          actions={[<div className="cart-function">
-          <MaterialButton />
-          <Button className="" text="Checkout" />
-          </div>
-        ]}
-            className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
+           className="blue-grey darken-1"
             textClassName="white-text"
             header={<CardTitle image="/onions.jpg"></CardTitle>}
           >
@@ -97,20 +70,13 @@ const Index = () => {
            m={3}
            s={12}
         >
-           <Card
-           actions={[<div className="cart-function">
-           <MaterialButton />
-           <Button className="" text="Checkout" />
-           </div>
-         ]}
-                    className="blue-grey darken-1"
-                    closeIcon={<Icon>close</Icon>}
-                    revealIcon={<Icon>more_vert</Icon>}
-                    textClassName="white-text"
-                    header={<CardTitle image="/lettuce.jpg"></CardTitle>}
-  >
-                 <h5>Lettuce</h5>
-                 <h6>$5.00</h6>
+          <Card
+            className="blue-grey darken-1"
+            textClassName="white-text"
+            header={<CardTitle image="/lettuce.jpg"></CardTitle>}
+          >
+            <h5>Lettuce</h5>
+            <h6>$5.00</h6>
            </Card>
          </Col>
 

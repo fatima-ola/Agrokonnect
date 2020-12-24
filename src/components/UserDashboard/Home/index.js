@@ -19,7 +19,7 @@ const Index = () => {
                 <NavLink to="/cart">CART PAGE</NavLink>
        </Breadcrumb>
        </div>
-       <div id="shop-products">
+       <div>
        <Products />
        </div>
        <div className='shop-foot'>

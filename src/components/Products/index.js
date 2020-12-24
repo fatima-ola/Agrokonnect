@@ -1,8 +1,8 @@
 import React from 'react';
-import {Row, Col, Card, Icon, CardTitle} from 'react-materialize';
+import {Row, Col, CardTitle} from 'react-materialize';
+import Card from '../Card/Index';
 import Button from '../Button/index';
 import MaterialButton from '../MaterialButton/index';
-
 
 const Index = () => {
 return(
@@ -12,15 +12,13 @@ return(
           m={3}
           s={12}
         >
-          <Card 
+          <Card
             actions={[<div className="cart-function">
               <MaterialButton />
               <Button className="" text="Checkout" />
               </div>
             ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/cocoa.jpg"></CardTitle>}
           >
@@ -40,8 +38,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/ginger.jpg"></CardTitle>}
           >
@@ -61,8 +57,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/nut.jpg"></CardTitle>}
           >
@@ -82,8 +76,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/kernel.jpg"></CardTitle>}
           >
@@ -106,8 +98,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/bean.png"></CardTitle>}
           >
@@ -127,8 +117,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/rice.jpg"></CardTitle>}
           >
@@ -148,8 +136,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/yam.jpg"></CardTitle>}
           >
@@ -169,8 +155,6 @@ return(
            </div>
          ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/potato.jpg"></CardTitle>}
           >
@@ -192,8 +176,6 @@ return(
           </div>
         ]}
                     className="blue-grey darken-1"
-                    closeIcon={<Icon>close</Icon>}
-                    revealIcon={<Icon>more_vert</Icon>}
                     textClassName="white-text"
                     header={<CardTitle image="/yellow-garri.jpg"></CardTitle>}
   >
@@ -213,8 +195,6 @@ return(
            </div>
          ]}
     className="blue-grey darken-1"
-    closeIcon={<Icon>close</Icon>}
-    revealIcon={<Icon>more_vert</Icon>}
     textClassName="white-text"
     header={<CardTitle image="/oil-liquid.jpg"></CardTitle>}
   >
@@ -234,8 +214,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/mango.jpg"></CardTitle>}
           >
@@ -255,8 +233,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/watermelon.jpg"></CardTitle>}
           >
@@ -279,8 +255,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/citrus.jpg"></CardTitle>}
           >
@@ -300,8 +274,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/pawpaw.jpg"></CardTitle>}
           >
@@ -321,8 +293,6 @@ return(
           </div>
         ]}
                     className="blue-grey darken-1"
-                    closeIcon={<Icon>close</Icon>}
-                    revealIcon={<Icon>more_vert</Icon>}
                     textClassName="white-text"
                     header={<CardTitle image="/dates.jpg"></CardTitle>}
   >
@@ -342,8 +312,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/carrots.png"></CardTitle>}
           >
@@ -364,8 +332,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/cabbage.jpg"></CardTitle>}
           >
@@ -385,8 +351,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/spinach.jpg"></CardTitle>}
           >
@@ -406,8 +370,6 @@ return(
           </div>
         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/onions.jpg"></CardTitle>}
           >
@@ -427,8 +389,6 @@ return(
            </div>
          ]}
                     className="blue-grey darken-1"
-                    closeIcon={<Icon>close</Icon>}
-                    revealIcon={<Icon>more_vert</Icon>}
                     textClassName="white-text"
                     header={<CardTitle image="/lettuce.jpg"></CardTitle>}
   >
