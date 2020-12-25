@@ -7,6 +7,10 @@ import Login from './components/Login/index';
 import Dashboard from './components/Dashboard/home';
 
 import {auth, firestore} from './components/Config/firebase';
+import Signup from './components/Signup/index'
+import Login from './components/Login/index';
+import UpdateProfile from './components/UpdateProfile/index'
+
 
 const App = () => {
   const [user, setUser] = useState('');
@@ -45,6 +49,9 @@ const App = () => {
         <Route path="/dashboard">
         <Dashboard displayName={user}  handleLogout={handleLogout}/>
       </Route>
+        <Route exact path="/updateprofile">
+          <UpdateProfile />
+        </Route>
       </Switch>
     </BrowserRouter>
   

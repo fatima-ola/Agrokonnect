@@ -216,7 +216,8 @@ a{
 /* Description ends*/
 
 /* form start */
-.signup{
+
+.signup, .update{
   width: 40%;
   margin: 50px auto;
   padding: 20px;
@@ -374,3 +375,18 @@ font-weight: bold;
   margin-bottom: 0px;
 }
 /**footer ends**/
+
+/* error message */
+.errormsgg{
+  color: red;
+  text-align: center;
+}
+
+/**update profile start**/
+
+.info{
+  padding: 10px!important;
+}
+
+/**update profile end**/
+
