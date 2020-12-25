@@ -4,7 +4,7 @@ import {TextInput, Icon} from 'react-materialize'
 
 
 const Index = (props) => {
-    const {label, placeholder, name, value, type,iconName } = props
+    const {label, placeholder, name, value, type, iconName, handleChange, handleKeyUp, handleSubmit, error} = props
     return (
         <div>
             <label><Icon className="regicon">{iconName}</Icon>{label}</label>
@@ -14,16 +14,17 @@ const Index = (props) => {
             inputClassName="browser-default"
             name={name}
             value={value}
-            // onChange={handleChange}
-            // onKeyUp={handleKeyUp}
-            // onSubmit={handleSubmit}
+            onChange={handleChange}
+            onKeyUp={handleKeyUp}
+            onSubmit={handleSubmit}
             />
 
 
-            {/* <p className="red-text">{error}</p> */}
+            <p className="red-text">{error}</p>
 
         </div>
     )
 }
 
 export default Index;
+
