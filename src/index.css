@@ -209,8 +209,9 @@ a{
 /* Description ends*/
 
 /* form start */
-.signup{
-  width: 70%;
+
+.signup, .update{
+  width: 40%;
   margin: 50px auto;
   padding: 20px;
   box-shadow: 0 0 4px 2px rgb(41, 173, 118);
@@ -373,3 +374,12 @@ font-weight: bold;
   color: red;
   text-align: center;
 }
+
+/**update profile start**/
+
+.info{
+  padding: 10px!important;
+}
+
+/**update profile end**/
+

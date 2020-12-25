@@ -24,7 +24,6 @@ const Index = () => {
             <h6>$300.00</h6>
           </Card>
         </Col>
-
         <Col
           m={3}
           s={12}
