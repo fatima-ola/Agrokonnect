@@ -209,6 +209,7 @@ a{
 /* Description ends*/
 
 /* form start */
+
 .signup, .update{
   width: 40%;
   margin: 50px auto;
@@ -368,6 +369,12 @@ font-weight: bold;
 }
 /**footer ends**/
 
+/* error message */
+.errormsgg{
+  color: red;
+  text-align: center;
+}
+
 /**update profile start**/
 
 .info{
@@ -375,3 +382,4 @@ font-weight: bold;
 }
 
 /**update profile end**/
+
