@@ -6,9 +6,7 @@ import Signup from './components/Signup/index';
 import Login from './components/Login/index';
 import Dashboard from './components/Dashboard/home';
 
-import {auth, firestore} from './components/Config/firebase';
-import Signup from './components/Signup/index'
-import Login from './components/Login/index';
+import {auth, firestore} from './config/firebase';
 import UpdateProfile from './components/UpdateProfile/index'
 
 
@@ -20,7 +18,7 @@ const App = () => {
       if (userData){
        const profile = await firestore.collection('users').doc(userData.uid).get();
        if (profile.exists){
-        setUser(profile.data().fullname);
+        setUser(profile.data().firstname || profile.data().fullname);
        }
       } else{
         setUser('');
