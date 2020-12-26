@@ -2,7 +2,7 @@ import React, { useState }  from 'react';
 import {NavLink, useHistory } from 'react-router-dom'
 import Input from '../TextInput/index';
 import Button from '../Button/index';
-import { auth } from '../Config/firebase'
+import { auth } from '../../config/firebase'
 
 const Index = () => {
     const [email, setEmail] = useState ('');

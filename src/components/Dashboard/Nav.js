@@ -29,7 +29,7 @@ const Nav =(props)=> {
             className="white z-depth-1"
             >
             <NavLink to="/" className="black-text" style={{backgroundColor: "transparent"}} id="joy">
-            Welcome, {displayName}
+            Welcome {displayName},
             </NavLink>
             <a href="#about" className="black-text">
                 About
