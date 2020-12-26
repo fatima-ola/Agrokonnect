@@ -31,9 +31,6 @@ const Index =()=> {
             <NavLink to="/" className="black-text">
                 Home
             </NavLink>
-            <NavLink to="/updateprofile" className="black-text">
-                update profil
-            </NavLink>
             <a href="#about" className="black-text">
                 About
             </a>

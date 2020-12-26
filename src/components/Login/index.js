@@ -31,7 +31,7 @@ const Index = () => {
              }
             const {user} = await auth.signInWithEmailAndPassword(email, password);
                localStorage.setItem('uid', user.uid);
-               history.push('/dashboard')
+               history.push('/Farmerdashboard')
         } catch (error) {
             if(error.code === 'auth/user-not-found'){
                 setErrorMessage('Invalid email address or password');
