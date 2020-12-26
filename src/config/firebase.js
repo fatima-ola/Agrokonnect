@@ -1,7 +1,6 @@
 import firebase from 'firebase';
 import 'firebase/auth';
 import 'firebase/firebase-storage'
-import 'firebase/auth';
 import 'firebase/firestore'
 
 let firebaseConfig = {
@@ -14,6 +13,7 @@ let firebaseConfig = {
   };
 
   // Initialize Firebase
+
   firebase.initializeApp(firebaseConfig);
 
   export const auth = firebase.auth ();
@@ -23,5 +23,6 @@ let firebaseConfig = {
   export const googleProvider = new firebase.auth.GoogleAuthProvider();
 
   export const facebookProvider = new firebase.auth.FacebookAuthProvider();
+
 
 

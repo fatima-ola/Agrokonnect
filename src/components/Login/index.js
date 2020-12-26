@@ -2,7 +2,8 @@ import React, { useState }  from 'react';
 import {NavLink, useHistory } from 'react-router-dom'
 import Input from '../TextInput/index';
 import Button from '../Button/index';
-import { auth } from '../Config/firebase'
+import { auth } from '../../config/firebase'
+
 
 const Index = () => {
     const [email, setEmail] = useState ('');
@@ -19,14 +20,15 @@ const Index = () => {
             setPassword(value)
         }
     }
+
     const handleKeyUp = (e) =>{
-        setErrorMessage ('')
+        setErrorMessage ('');
       }
 
       const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-           if (!password || !email) {
+           if (!email || !password) {
                setErrorMessage('All fields are required!')
              }
             const {user} = await auth.signInWithEmailAndPassword(email, password);
@@ -35,13 +37,15 @@ const Index = () => {
         } catch (error) {
             if (error.code === 'auth/user-not-found'){
                 setErrorMessage('Invalid email address or password')
-            }else if (error.code === 'auth/wrong-password'){
+            }else if (error.code === 'auth/invalid-email'){
+                setErrorEmail(error.message)
+            }else if(error.code === 'auth/wrong-password'){
                 setErrorMessage('Invalid email address or password ')
             }
-            console.log(error.code);
-            console.log(error.message)
+           
         }
     }
+    
     return (
         <div className="container formcontainer">
 
