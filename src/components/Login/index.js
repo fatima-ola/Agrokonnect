@@ -36,10 +36,6 @@ const Index = () => {
         } catch (error) {
             if(error.code === 'auth/user-not-found'){
                 setErrorMessage('Invalid email address or password');
-            }else if(error.code === 'auth/invalid-email'){
-                setErrorEmail(error.message)
-            }else if(error.code === 'auth/wrong-password'){
-                setErrorMessage('Invalid email address or password')
             }else if (error.code === 'auth/invalid-email'){
                 setErrorEmail(error.message)
             }else if(error.code === 'auth/wrong-password'){
