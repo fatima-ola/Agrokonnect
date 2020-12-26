@@ -4,6 +4,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Landing from './components/Landing/index';
 import Signup from './components/Signup/index';
 import Login from './components/Login/index';
+import UserDashBoard from './components/UserDashboard/Home/index';
 import Dashboard from './components/Dashboard/home';
 
 import {auth, firestore} from './config/firebase';
@@ -44,11 +45,16 @@ const App = () => {
         <Route exact path="/login">
           <Login />
         </Route>
+
+        <Route exact path="/dashboard">
+          <UserDashBoard />
+
         <Route path="/dashboard">
         <Dashboard displayName={user}  handleLogout={handleLogout}/>
       </Route>
         <Route exact path="/updateprofile">
           <UpdateProfile />
+
         </Route>
       </Switch>
     </BrowserRouter>
