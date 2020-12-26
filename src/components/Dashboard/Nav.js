@@ -5,8 +5,8 @@ import { Navbar, Icon} from 'react-materialize';
 import {NavLink} from 'react-router-dom'
 
 
-
-const Index =()=> {
+const Nav =(props)=> {
+    const {handleLogout, displayName} = props;
     return (
     <div className="navbar-fixed">
           <Navbar 
@@ -28,11 +28,8 @@ const Index =()=> {
             }}
             className="white z-depth-1"
             >
-            <NavLink to="/" className="black-text">
-                Home
-            </NavLink>
-            <NavLink to="/updateprofile" className="black-text">
-                update profil
+            <NavLink to="/" className="black-text" style={{backgroundColor: "transparent"}} id="joy">
+            Welcome {displayName},
             </NavLink>
             <a href="#about" className="black-text">
                 About
@@ -43,9 +40,7 @@ const Index =()=> {
             <a href="testimonial" className="black-text">
                 Testimonial
             </a>
-            <NavLink to="/signin" className="black-text">
-                Shop
-            </NavLink>
+            
             <a href="#home" className="header-search">
                 <Icon className="material-icons">search</Icon>
             </a>
@@ -53,11 +48,12 @@ const Index =()=> {
                 <Icon className="material-icons">shopping_cart</Icon>
             </a>
            <NavLink to="/signup" className="regbtn"> 
-               <Button text="Register" className="thebtn"/>
+               <Button text="check out" className="thebtn"/>
             </NavLink>
-            <NavLink to="/dashboard" className="regbtn">
-                <Button text="Login" className="thebtn" />
-            </NavLink> 
+            <NavLink onClick={handleLogout} to ='/' className="black-text " id="joy">
+            Logout
+            </NavLink>
+            
             </Navbar>
         
     </div>
@@ -65,6 +61,6 @@ const Index =()=> {
     )
 }
 
-export default Index
+export default Nav;
 
 
