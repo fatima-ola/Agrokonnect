@@ -1,8 +1,9 @@
 import React from 'react';
 import {Row, Col, CardTitle} from 'react-materialize';
-import Card from '../Card/Index';
+import Card from './../Card/index';
 import Button from '../Button/index';
 import MaterialButton from '../MaterialButton/index';
+
 
 const Index = () => {
 return(

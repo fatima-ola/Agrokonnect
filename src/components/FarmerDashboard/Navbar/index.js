@@ -1,13 +1,12 @@
 import React from 'react';
 import 'materialize-css';
-import Button from '../Button/index'
+import Button from '../../Button/index';
 import { Navbar, Icon} from 'react-materialize';
 import {NavLink} from 'react-router-dom'
 
-
-
-const Index =()=> {
-    return (
+const Index =(props)=> {
+  const{displayName} = props;
+    return ( 
     <div className="navbar-fixed">
           <Navbar 
             alignLinks="right"
@@ -28,35 +27,18 @@ const Index =()=> {
             }}
             className="white z-depth-1"
             >
+            
             <NavLink to="/" className="black-text">
-                Home
+            Welcome {displayName}
             </NavLink>
-            <NavLink to="/updateprofile" className="black-text">
-                update profil
-            </NavLink>
-            <a href="#about" className="black-text">
-                About
-            </a>
-            <a href="#feature" className="black-text">
-                Products
-            </a>
-            <a href="testimonial" className="black-text">
-                Testimonial
-            </a>
             <NavLink to="/signin" className="black-text">
                 Shop
             </NavLink>
             <a href="#home" className="header-search">
                 <Icon className="material-icons">search</Icon>
-            </a>
-            <a href="#home" className="header-search">
-                <Icon className="material-icons">shopping_cart</Icon>
-            </a>
-           <NavLink to="/signup" className="regbtn"> 
-               <Button text="Register" className="thebtn"/>
-            </NavLink>
+            </a>    
             <NavLink to="/login" className="regbtn">
-                <Button text="Login" className="thebtn" />
+                <Button text="Logout" className="thebtn" />
             </NavLink> 
             </Navbar>
         

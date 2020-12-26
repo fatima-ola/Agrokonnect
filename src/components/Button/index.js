@@ -2,9 +2,6 @@ import React from 'react'
 import {Button} from 'react-materialize'
 
 const Index = (props) => {
-    const {className, text} = props
-
-const index = (props) => {
     const {className, text, handleClick} = props
 
     return (
@@ -22,4 +19,4 @@ const index = (props) => {
     )
 }
 
-export default Index
+export default Index;
