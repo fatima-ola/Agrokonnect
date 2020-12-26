@@ -1,22 +1,19 @@
 import React from 'react';
-import {Row, Col, Card, Icon, CardTitle} from 'react-materialize';
+import {Row, Col, CardTitle} from 'react-materialize';
+import Card from '../../Card/Index';
+//import Button from '../../Button/index';
+//import MaterialButton from '../../MaterialButton/index';
 
 const Index = () => {
     return(
-      <div className="product-1">
+      <div>
         <Row>
         <Col
           m={3}
           s={12}
         >
-          <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+           <Card
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/bean.png"></CardTitle>}
           >
@@ -30,13 +27,7 @@ const Index = () => {
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/rice.jpg"></CardTitle>}
           >
@@ -50,13 +41,7 @@ const Index = () => {
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/yam.jpg"></CardTitle>}
           >
@@ -70,13 +55,7 @@ const Index = () => {
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/potato.jpg"></CardTitle>}
           >
@@ -92,18 +71,12 @@ const Index = () => {
            s={12}
         >
            <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-    ]}
-                    className="blue-grey darken-1"
-                    closeIcon={<Icon>close</Icon>}
-                    revealIcon={<Icon>more_vert</Icon>}
-                    textClassName="white-text"
-                    header={<CardTitle image="/yellow-garri.jpg"></CardTitle>}
-  >
-                 <h5>Garri</h5>
-                 <h6>$5.00</h6>
+              className="blue-grey darken-1"
+              textClassName="white-text"
+              header={<CardTitle image="/yellow-garri.jpg"></CardTitle>}
+>
+            <h5>Garri</h5>
+            <h6>$5.00</h6>
            </Card>
          </Col>
 
@@ -112,13 +85,7 @@ const Index = () => {
   s={12}
 >
         <Card
-    actions={[
-      <a key="1" href="/"><i class="small material-icons" title="search">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-    ]}
     className="blue-grey darken-1"
-    closeIcon={<Icon>close</Icon>}
-    revealIcon={<Icon>more_vert</Icon>}
     textClassName="white-text"
     header={<CardTitle image="/oil-liquid.jpg"></CardTitle>}
   >

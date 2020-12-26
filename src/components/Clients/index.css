@@ -13,8 +13,7 @@
  
 
  .later{
-     
-     margin:0;
+     margin-top:0;
      text-align: center;
      padding: 50px;
  }
@@ -39,6 +38,8 @@
      width:62px;
  }
 
+ /*Latest Products */
+
  .image{
     width:30%;
     margin: 2em auto ;
@@ -49,19 +50,28 @@
 
  .card{
      width: 70%;
-     
-   
- }
+     margin-top:30px !important;
+     transition: 500ms linear;
+    }
 
  .card-action{
     display:none;
    }
+   .card:hover{
+    transform: scale(1.1) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
 
- .card:hover > .card-action{
+   .card:hover > .card-action{
     display: block;
- }
+    
+   }
 
- 
+   .rm2-pg1{
+       background-color:white;
+       color:black;
+   }
+
 
  .card-action{
      text-align:center;
@@ -69,22 +79,8 @@
      border-top:0 !important;
      transition: 0.3s;
  }
- 
 
- .material-icons{
-    padding:10px;
-    border-radius: 50%;
-    background-color:#F8F272;
-    color:#333;
-    transition: 0.3s;
-}
-
- .material-icons:hover{
-     border-radius:50%;
-     padding:12px;
-     background-color:#52b788;
-     color:white;
- }
+ /*End of Latest Products*/
 
  .card-image{
      background-color:white;
@@ -121,8 +117,6 @@
 }
 
 
-
-
 .fa{
     font-size: 50px ;
     color: #C1C1C1 ;
@@ -141,7 +135,15 @@
     color: #52b788 !important;
 }
 
-.product-1{
-    margin: 20px auto 0 auto;
-    width: 90%;
+/*Material Button */
+.MuiButton-label{
+    font: 8px sans-serif !important;
 }
+
+.MuiButton-containedSecondary{
+    background-color:#ef3054!important;
+    width:70% !important;
+    margin-bottom:15px !important;
+}
+
+/*end of Material Button */
