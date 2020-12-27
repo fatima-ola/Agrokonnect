@@ -52,9 +52,6 @@ const Index = () => {
             }
         }
 
-
-        
-
             // handlekeyUp function
             const handleKeyUp = () =>{
                 setErrorMessage ('');

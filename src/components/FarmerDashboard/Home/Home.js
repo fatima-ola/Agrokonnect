@@ -3,10 +3,6 @@ import NavBar from './../Navbar/NavBar';
 import UpdateProfile from './../../UpdateProfile/index';
 import Footer from '../../Footer/index';
 import {Tabs, Tab} from 'react-materialize';
-import {NavLink} from 'react-router-dom';
-
-
-
 
 const Home = (props) => {
   const {handleLogout, displayName} = props;

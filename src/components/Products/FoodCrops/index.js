@@ -7,7 +7,7 @@ import Card from './../../Card/index';
 
 const Index = () => {
     return(
-      <div>
+      <div className="container">
         <Row>
         <Col
           m={3}

@@ -5,7 +5,7 @@ import { Navbar, Icon} from 'react-materialize';
 import {NavLink} from 'react-router-dom'
 
 const Index =(props)=> {
-  const{displayName} = props;
+  const {handleLogout, displayName} = props;
     return ( 
     <div className="navbar-fixed">
           <Navbar 
@@ -41,9 +41,9 @@ const Index =(props)=> {
                 <Icon className="material-icons">shopping_cart</Icon>
             </a>
             
-            <NavLink to="/dashboard" className="regbtn">
-                <Button text="Login" className="thebtn" />
-            </NavLink> 
+            <NavLink onClick={handleLogout} to="/" className="regbtn">
+                <Button text="Logout" className="thebtn" />
+            </NavLink>
             </Navbar>
         
     </div>

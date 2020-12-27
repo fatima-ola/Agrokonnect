@@ -52,7 +52,7 @@ const App = () => {
         <Route exact path="/login">
           <Login />
         </Route>
-        <Route exact path="/User dashboard">
+        <Route exact path="/Userdashboard">
           <UserDashBoard displayName={user}  handleLogout={handleLogout}/>
         </Route>
         <Route exact path="/Farmerdashboard">

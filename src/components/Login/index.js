@@ -2,7 +2,7 @@ import React, { useState }  from 'react';
 import {NavLink, useHistory } from 'react-router-dom'
 import Input from '../TextInput/index';
 import Button from '../Button/index';
-import { auth } from '../../config/firebase'
+import { auth, firestore } from '../../config/firebase'
 
 const Index = () => {
     const [email, setEmail] = useState ('');
@@ -31,7 +31,28 @@ const Index = () => {
              }
             const {user} = await auth.signInWithEmailAndPassword(email, password);
                localStorage.setItem('uid', user.uid);
-               history.push('/Farmerdashboard')
+               auth.onAuthStateChanged(async(userData) =>{
+               if (userData){
+                const profile = await firestore.collection('users').doc(userData.uid).get();
+            
+                if (profile.exists ){
+                  if(profile.data().category === 'Farmer'){
+                    history.push('/Farmerdashboard')
+                  }else if(profile.data().category === 'Buyer'){
+                    history.push('/Userdashboard')
+                  }
+                 // setUser(profile.data().firstname || profile.data().fullname);
+                //  console.log(profile.data().category)
+                }
+               } 
+               })
+            //    history.push('/Farmerdashboard')
+
+
+
+
+
+
         } catch (error) {
             if(error.code === 'auth/user-not-found'){
                 setErrorMessage('Invalid email address or password');
