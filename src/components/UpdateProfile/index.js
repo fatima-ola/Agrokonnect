@@ -49,7 +49,7 @@ const Index = () => {
     
     return (
         <div>    
-            <h2 className="center-align">Update Profile Information</h2>
+            <h4 className="center-align">Update Profile Information</h4>
             <form >
                <div className="update">
                <Input type="text" name="firstname" label="First Name" value={firstname} handleChange={handleChange} placeholder="Enter First Name"/>
