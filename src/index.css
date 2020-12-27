@@ -425,5 +425,15 @@ font-weight: bold;
   padding: 10px!important;
 }
 
+.updatepro{
+  height: 900px;
+}
+.input-field{
+  float: none!important;
+}
+.welcome-note{
+  font-size: larger;
+  line-height: 30px;
+}
 /**update profile end**/
 

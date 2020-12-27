@@ -1,26 +1,18 @@
 import React from 'react';
-import Navbar from '../Navbar';
-import Products from '../../Products/index';
+import NavBar from './../Navbar/NavBar';
+import UpdateProfile from './../../UpdateProfile/index';
 import Footer from '../../Footer/index';
 import {Tabs, Tab} from 'react-materialize';
 
-
-const Index = (props) => {
+const Home = (props) => {
   const {handleLogout, displayName} = props;
     return(
         <div>
-       <Navbar handleLogout={handleLogout} displayName={displayName}/>
+       <NavBar handleLogout={handleLogout} displayName={displayName}/>
        <div className="shop-page">
-         <h2 className="ping">USER'S DASHBOARD</h2>
+         <h2 className="ping">FARMER'S DASHBOARD</h2>
        </div>
-       {/* <div className="bread-shop">
-       <Breadcrumb className="teal">
-                <NavLink to="/">HOME</NavLink>
-                <NavLink to="/dashboard">SHOP</NavLink>
-                <NavLink to="/cart">CART PAGE</NavLink>
-       </Breadcrumb>
-       </div> */}
-       <Tabs className="tab-demo z-depth-1">
+        <Tabs className="tab-demo z-depth-1">
         <Tab
         options={{
         duration: 300,
@@ -32,7 +24,7 @@ const Index = (props) => {
         className="section-info"
         >
         <div className="center-align">
-          <h6 className="welcome-note">Welcome to your dashboard page on Agrokonnect website.<br /> On this dashboard, you be able to click on a product and shop <br />for the product by adding it to cart, you will be able to checkout to <br />make payment for products purchased.</h6>
+          <h6 className="welcome-note">Welcome to your dashboard page on Agrokonnect website.<br /> On this dashboard, you will edit your profile information and <br />upload available products with their price tags.</h6>
         </div>
         </Tab>
         <Tab
@@ -43,10 +35,10 @@ const Index = (props) => {
         responsiveThreshold: Infinity,
         swipeable: false
         }}
-        title="SHOP"
+        title="Update Profile"
         className="section-info"
         >
-        <Products />
+        <UpdateProfile/>
          
         </Tab>
         <Tab
@@ -56,15 +48,12 @@ const Index = (props) => {
         responsiveThreshold: Infinity,
         swipeable: false
         }}
-        title="CART PAGE"
+        title="Upload Products"
         className="section-info"
         >
-        Cart Page
+        Test 3
         </Tab>
         </Tabs>
-       <div>
-       
-       </div>
        <div className='shop-foot'>
        <Footer />
        </div>
@@ -73,4 +62,4 @@ const Index = (props) => {
     )
 }
 
-export default Index;
+export default Home;

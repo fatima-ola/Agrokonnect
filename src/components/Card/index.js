@@ -1,15 +1,20 @@
 import React from 'react';
-import {CardPanel} from 'react-materialize'
+import {Card} from 'react-materialize'
 
-const Index = ({children}) => {
-    return(
-      <CardPanel className="hoverable z-depth-1">
-            <span className="white-text">
-            {children}
-            </span>
-          </CardPanel>
-        
-    )
+const Index =(props)  =>{
+    const {actions, className,children, textClassName,header} = props
+    return (
+       <Card
+       actions={actions}
+         className={className}
+         //closeIcon={<Icon>close</Icon>}
+         //revealIcon={revealIcon}
+         textClassName={textClassName}
+         header={header}
+         >
+       {children}
+       </Card>
+    ); 
 }
 
 export default Index;
