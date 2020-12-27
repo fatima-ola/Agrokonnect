@@ -431,5 +431,9 @@ font-weight: bold;
 .input-field{
   float: none!important;
 }
+.welcome-note{
+  font-size: larger;
+  line-height: 30px;
+}
 /**update profile end**/
 
