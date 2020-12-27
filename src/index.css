@@ -6,6 +6,13 @@
   padding: 0; 
 }
 
+/* for error message */
+.errormsg{
+  color: red;
+  text-align: center;
+  font-size: 20px;
+}
+
 /**Navabar styling start**/
 nav a{
   color: #76aa6f!important;
@@ -209,7 +216,8 @@ a{
 /* Description ends*/
 
 /* form start */
-.signup{
+
+.signup, .update{
   width: 40%;
   margin: 50px auto;
   padding: 20px;
@@ -274,11 +282,11 @@ select{
 border: 1px solid rgb(118, 118, 118)!important;
 }
 
-.regicon {
+/*.regicon {
   background-color: white!important;
   color: rgb(53, 52, 52) !important;
   transition: none!important;
-}
+}*/
 
 .form-img{
   height: 100px;
@@ -367,3 +375,65 @@ font-weight: bold;
   margin-bottom: 0px;
 }
 /**footer ends**/
+
+/** SHOPPING PAGE 8**/
+.shop-page{
+  background-image: url("image/flo-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height:300px;
+ 
+}
+
+.ping{
+  margin:0;
+  padding-top: 2.5em;
+  text-align: center;
+  font-size: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color:#fff;
+  text-shadow: 3px 9px 16px rgba(0, 0, 0, 0.18);
+}
+
+/*User Dashboard*/
+.shop-foot{
+  border-top: 1px dotted #C0C0C0;
+}
+
+.bread-shop .nav-wrapper{
+ background-color:white;
+ color:black !important;
+ text-align:center;
+}
+.breadcrumb:before, .breadcrumb{
+  color:black !important;
+  font-family: sans-serif;
+}
+
+/*End of User Dashboard*/
+
+/* error message */
+.errormsgg{
+  color: red;
+  text-align: center;
+}
+
+/**update profile start**/
+
+.info{
+  padding: 10px!important;
+}
+
+.updatepro{
+  height: 900px;
+}
+.input-field{
+  float: none!important;
+}
+.welcome-note{
+  font-size: larger;
+  line-height: 30px;
+}
+/**update profile end**/
+

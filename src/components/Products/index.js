@@ -1,23 +1,25 @@
 import React from 'react';
-import {Row, Col, Card, Icon, CardTitle} from 'react-materialize';
+import {Row, Col, CardTitle} from 'react-materialize';
+import Card from './../Card/index';
+import Button from '../Button/index';
+import MaterialButton from '../MaterialButton/index';
 
 
 const Index = () => {
 return(
- <div className="product-1">         
+ <div className="container">         
     <Row>
         <Col
           m={3}
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
+            actions={[<div className="cart-function">
+              <MaterialButton />
+              <Button className="" text="Checkout" />
+              </div>
             ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/cocoa.jpg"></CardTitle>}
           >
@@ -31,13 +33,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/ginger.jpg"></CardTitle>}
           >
@@ -51,13 +52,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/nut.jpg"></CardTitle>}
           >
@@ -71,13 +71,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/kernel.jpg"></CardTitle>}
           >
@@ -94,13 +93,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/bean.png"></CardTitle>}
           >
@@ -114,13 +112,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/rice.jpg"></CardTitle>}
           >
@@ -134,13 +131,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/yam.jpg"></CardTitle>}
           >
@@ -154,13 +150,12 @@ return(
           s={12}
         >
            <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+           actions={[<div className="cart-function">
+           <MaterialButton />
+           <Button className="" text="Checkout" />
+           </div>
+         ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/potato.jpg"></CardTitle>}
           >
@@ -176,13 +171,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-    ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
                     className="blue-grey darken-1"
-                    closeIcon={<Icon>close</Icon>}
-                    revealIcon={<Icon>more_vert</Icon>}
                     textClassName="white-text"
                     header={<CardTitle image="/yellow-garri.jpg"></CardTitle>}
   >
@@ -196,13 +190,12 @@ return(
           s={12}
         >
            <Card
-    actions={[
-      <a key="1" href="/"><i class="small material-icons" title="search">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-    ]}
+           actions={[<div className="cart-function">
+           <MaterialButton />
+           <Button className="" text="Checkout" />
+           </div>
+         ]}
     className="blue-grey darken-1"
-    closeIcon={<Icon>close</Icon>}
-    revealIcon={<Icon>more_vert</Icon>}
     textClassName="white-text"
     header={<CardTitle image="/oil-liquid.jpg"></CardTitle>}
   >
@@ -216,13 +209,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-                <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-                <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/mango.jpg"></CardTitle>}
           >
@@ -236,13 +228,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-                <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-                <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/watermelon.jpg"></CardTitle>}
           >
@@ -259,15 +250,14 @@ return(
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
-            header={<CardTitle image="/orange.jpg"></CardTitle>}
+            header={<CardTitle image="/citrus.jpg"></CardTitle>}
           >
             <h5>Oranges</h5>
             <h6>$5.00</h6>
@@ -279,13 +269,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-                <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-                <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/pawpaw.jpg"></CardTitle>}
           >
@@ -299,13 +288,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-                <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-                <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-    ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
                     className="blue-grey darken-1"
-                    closeIcon={<Icon>close</Icon>}
-                    revealIcon={<Icon>more_vert</Icon>}
                     textClassName="white-text"
                     header={<CardTitle image="/dates.jpg"></CardTitle>}
   >
@@ -319,13 +307,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/carrots.png"></CardTitle>}
           >
@@ -340,13 +327,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/cabbage.jpg"></CardTitle>}
           >
@@ -360,13 +346,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/spinach.jpg"></CardTitle>}
           >
@@ -380,13 +365,12 @@ return(
           s={12}
         >
           <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-            ]}
+          actions={[<div className="cart-function">
+          <MaterialButton />
+          <Button className="" text="Checkout" />
+          </div>
+        ]}
             className="blue-grey darken-1"
-            closeIcon={<Icon>close</Icon>}
-            revealIcon={<Icon>more_vert</Icon>}
             textClassName="white-text"
             header={<CardTitle image="/onions.jpg"></CardTitle>}
           >
@@ -400,13 +384,12 @@ return(
            s={12}
         >
            <Card
-            actions={[
-              <a key="1" href="/"><i class="small material-icons 1">search</i></a>,
-              <a key="2" href="/"><i class="small material-icons">shopping_cart</i></a>
-    ]}
+           actions={[<div className="cart-function">
+           <MaterialButton />
+           <Button className="" text="Checkout" />
+           </div>
+         ]}
                     className="blue-grey darken-1"
-                    closeIcon={<Icon>close</Icon>}
-                    revealIcon={<Icon>more_vert</Icon>}
                     textClassName="white-text"
                     header={<CardTitle image="/lettuce.jpg"></CardTitle>}
   >
