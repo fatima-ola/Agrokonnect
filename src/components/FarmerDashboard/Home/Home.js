@@ -1,8 +1,10 @@
 import React from 'react';
 import NavBar from './../Navbar/NavBar';
 import UpdateProfile from './../../UpdateProfile/index';
+import UpdateProducts from './../../UploadProducts/index';
 import Footer from '../../Footer/index';
 import {Tabs, Tab} from 'react-materialize';
+
 
 const Home = (props) => {
   const {handleLogout, displayName} = props;
@@ -51,7 +53,7 @@ const Home = (props) => {
         title="Upload Products"
         className="section-info"
         >
-        Test 3
+        <UpdateProducts />
         </Tab>
         </Tabs>
        <div className='shop-foot'>
