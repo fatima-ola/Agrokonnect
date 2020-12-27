@@ -42,9 +42,7 @@ const Home = (props) => {
         title="Update Profile"
         className="section-info"
         >
-        <div>
-          <UpdateProfile/>
-        </div>
+        <UpdateProfile/>
          
         </Tab>
         <Tab
@@ -60,9 +58,6 @@ const Home = (props) => {
         Test 3
         </Tab>
         </Tabs>
-        {/* <div>
-          <UpdateProfile/>
-        </div> */}
        <div className='shop-foot'>
        <Footer />
        </div>
