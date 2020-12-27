@@ -6,8 +6,11 @@ import Signup from './components/Signup/index';
 import Login from './components/Login/index';
 import UserDashBoard from './components/UserDashboard/Home/index';
 import Dashboard from './components/Dashboard/home';
+import FarmerDashboard from './components/FarmerDashboard/Home/Home';
 import {auth, firestore} from './config/firebase';
 import UpdateProfile from './components/UpdateProfile/index'
+
+
 
 
 const App = () => {
@@ -17,14 +20,19 @@ const App = () => {
     auth.onAuthStateChanged(async(userData) =>{
       if (userData){
        const profile = await firestore.collection('users').doc(userData.uid).get();
-       if (profile.exists){
-
-        setUser(profile.data().firstname || profile.data().fullname);
+       if (profile.exists ){
+         if(profile.data().category === 'Farmer'){
+          setUser(profile.data().firstname || profile.data().fullname);
+         }else if(profile.data().category === 'Buyer'){
+          setUser(profile.data().firstname || profile.data().fullname);
+         }
+        // setUser(profile.data().firstname || profile.data().fullname);
+        // console.log(profile.data().category)
        }
       } else{
         setUser('');
       }
-    });
+    })
   }, []);
   
   
@@ -45,12 +53,17 @@ const App = () => {
         <Route exact path="/login">
           <Login />
         </Route>
-
         <Route exact path="/dashboard">
           <UserDashBoard />
         </Route>
         <Route path="/dashboard"> 
           <Dashboard displayName={user}  handleLogout={handleLogout}/>
+        </Route>
+        <Route exact path="/Userdashboard">
+          <UserDashBoard displayName={user}  handleLogout={handleLogout}/>
+        </Route>
+        <Route exact path="/Farmerdashboard">
+          <FarmerDashboard displayName={user}  handleLogout={handleLogout}/>
         </Route>
         <Route exact path="/updateprofile">
           <UpdateProfile />
