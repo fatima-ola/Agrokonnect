@@ -7,6 +7,7 @@ import Benefit from '../Benefit/Benefit'
 import Footer from '../Footer/index'
 import Clients from '../Clients/index';
 import Tabs from '../Tabs/index';
+import Farmer from '../FarmersDashboard/index'
 
 const Index =()=> {
     return (
@@ -25,6 +26,7 @@ const Index =()=> {
             <Clients />
            <Benefit />
            <Footer />  
+           <Farmer/>
         </div>
     )
       
