@@ -2,7 +2,6 @@ import React, { useState }  from 'react';
 import {NavLink, useHistory } from 'react-router-dom'
 import Input from '../TextInput/index';
 import Button from '../Button/index';
-import { auth } from '../../config/firebase'
 import { auth, firestore } from '../../config/firebase'
 
 const Index = () => {
