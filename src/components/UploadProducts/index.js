@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Input from '../TextInput/index';
 import {TextInput} from 'react-materialize';
 import Button from '../Button/index';
-import {firestore} from '../../config/firebase';
+import {firestore, storage} from '../../config/firebase';
 
 
 const Index = () => {
@@ -44,12 +44,6 @@ const Index = () => {
         }
       };
     
-    
-      const handleDelete = (e) => {
-        e.preventDefault();
-        // const product = firestore.collection('products').doc(uid);
-        // product.delete
-      }
 
     return (
         <div>    
@@ -65,7 +59,7 @@ const Index = () => {
                 <Input type="text" name="productQty" label="Product Quantity" value={productQty} handleChange={handleChange} placeholder="Enter Product Quantity"/>
 
                 <Button text="Add Product" handleClick={handleAdd} className="buttonLogin blue" />
-                <Button text="Delete Product" handleClick={handleDelete} className="buttonLogin red" />
+                
                 </div>
             </form>                                              
         </div>

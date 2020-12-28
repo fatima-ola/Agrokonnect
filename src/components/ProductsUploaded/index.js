@@ -61,7 +61,7 @@ const Index = () =>{
                                 <h5>{product.productName}</h5>
                                 <h6>{product.productPrice}</h6>
                                 <br />
-                               <Button text="Delete" handleClick={() => handleDelete(product.id)}/>   
+                               <Button text="Delete" handleClick={() => handleDelete(product.id)} className="red"/>   
                                 </Card>
                             </Col>
 
