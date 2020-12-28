@@ -17,3 +17,26 @@
 .child-div{
   padding-right: 10px;
 }
+.center-form{
+  width: 100%;
+  margin: 5% 10%;
+}
+
+.signup-title{
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: none;
+}
+.signup-title:hover{
+  text-decoration: none;
+}
+.btn-signup, .btn-login{
+  width: 100% !important;
+  background-color: rgb(0, 255, 55) !important;
+  margin-bottom: 10px;
+} 
+
+.form-control{
+  /* padding: 56 !important; */
+}

@@ -1,13 +1,14 @@
 import React from 'react';
 import {Row, Col, CardTitle} from 'react-materialize';
-import Card from '../Card/Index';
+import Card from './../Card/index';
 import Button from '../Button/index';
 import {NavLink} from 'react-router-dom'; 
 import MaterialButton from '../MaterialButton/index';
 
+
 const Index = () => {
 return(
- <div>         
+ <div className="container">         
     <Row>
         <Col
           m={3}

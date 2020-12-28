@@ -2,9 +2,9 @@ import React from 'react';
 import 'materialize-css';
 import Button from '../../Button/index';
 import { Navbar, Icon} from 'react-materialize';
-import {NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom';
 
-const Index =(props)=> {
+const NavBar =(props)=> {
   const {handleLogout, displayName} = props;
     return ( 
     <div className="navbar-fixed">
@@ -29,21 +29,14 @@ const Index =(props)=> {
             >
             
             <NavLink to="/" className="black-text">
-            Welcome {displayName}
-            </NavLink>
-            <NavLink to="/signin" className="black-text">
-                Shop
+            Welcome Farmer {displayName},
             </NavLink>
             <a href="#home" className="header-search">
                 <Icon className="material-icons">search</Icon>
-            </a>
-            <a href="#home" className="header-search">
-                <Icon className="material-icons">shopping_cart</Icon>
-            </a>
-            
+            </a>    
             <NavLink onClick={handleLogout} to="/" className="regbtn">
                 <Button text="Logout" className="thebtn" />
-            </NavLink>
+            </NavLink> 
             </Navbar>
         
     </div>
@@ -51,6 +44,6 @@ const Index =(props)=> {
     )
 }
 
-export default Index
+export default NavBar
 
 

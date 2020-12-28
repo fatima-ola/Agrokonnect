@@ -23,8 +23,8 @@ const Index =()=> {
            <Tabs />
            </div>           
             <Clients />
-           <Benefit />
-           <Footer />  
+           <Benefit />  
+           <Footer /> 
         </div>
     )
       

@@ -1,10 +1,10 @@
 import React from 'react';
 import {Row, Col, CardTitle} from 'react-materialize';
-import Card from '../../Card/Index';
+import Card from './../../Card/index';
 
 const Index = () => {
      return(
-    <div>
+    <div className="container">
     <Row>
         <Col
           m={3}
@@ -20,7 +20,6 @@ const Index = () => {
             <h6>$300.00</h6>
           </Card>
         </Col>
-
         <Col
           m={3}
           s={12}
