@@ -5,20 +5,7 @@ import {Table, Button} from 'react-materialize'
 
 const Index = () => {
     return (
-        <div>
-
-        <div className="cart-image">
-            <h2 className= "white-text center-align cart-style"> CART PAGE </h2>
-        </div>
-        
-        <div className="carticon-div">
-            <p> Home <img src="https://img.icons8.com/android/2x/long-arrow-right.png" alt="arrow" className="cart-icon" />
-            SHOP <img src="https://img.icons8.com/android/2x/long-arrow-right.png" alt="arrow" className="cart-icon" />
-             CART PAGE </p>
-        </div>
-
-
-        {/* cart table */}
+        <div>    
         <div className="cart-table">
              <Table>
             <thead>
