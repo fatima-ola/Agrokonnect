@@ -37,21 +37,15 @@ const Index =()=> {
             <a href="#feature" className="black-text">
                 Products
             </a>
-            <a href="testimonial" className="black-text">
+            <a href="#testimonial" className="black-text">
                 Testimonial
             </a>
-            <NavLink to="/signin" className="black-text">
+            <NavLink to="/signup" className="black-text">
                 Shop
             </NavLink>
             <a href="#home" className="header-search">
                 <Icon className="material-icons">search</Icon>
             </a>
-            {/* <a href="#home" className="header-search">
-                <Icon className="material-icons">shopping_cart</Icon>
-            </a> */}
-            
-            {/* drowdown for cart */}
-          
             <Dropdown
                 id="Dropdown_7"
                 options={{

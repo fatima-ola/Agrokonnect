@@ -29,7 +29,7 @@ const Index = () => {
       <h6 className="button-h6">
         GROWN WITH LOVE
       </h6>
-      <Button
+      <Button href="/signup"
     large
     node="a"
     style={{
@@ -53,7 +53,7 @@ const Index = () => {
       <h6 className="button-h6">
         WITHOUT HARMFUL ADDITIVES
       </h6>
-      <Button
+      <Button href="/signup"
     large
     node="a"
     style={{
@@ -77,7 +77,7 @@ const Index = () => {
       <h6 className="button-h6">
         WITH LOTS OF VITAMINS
       </h6>
-      <Button
+      <Button href="/signup"
     large
     node="a"
     style={{

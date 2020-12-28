@@ -13,16 +13,20 @@ const Index =()=> {
         <div>
            <NavBar /> 
            <HeroSection />
-           <About/>  
+           <div id="about">
+           <About/> 
+           </div>
            <Description />
            <div>
-            <div className="later">
+            <div className="later" id="feature">
                 <h6>Latest Arrivals</h6>
                 <h4>NEW PRODUCTS</h4>
             </div>
            <Tabs />
-           </div>           
+           </div> 
+           <div id="testimonial">
             <Clients />
+            </div>       
            <Benefit />  
            <Footer /> 
         </div>
