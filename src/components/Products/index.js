@@ -2,6 +2,7 @@ import React from 'react';
 import {Row, Col, CardTitle} from 'react-materialize';
 import Card from './../Card/index';
 import Button from '../Button/index';
+import {NavLink} from 'react-router-dom'; 
 import MaterialButton from '../MaterialButton/index';
 
 
@@ -16,7 +17,10 @@ return(
           <Card
             actions={[<div className="cart-function">
               <MaterialButton />
-              <Button className="" text="Checkout" />
+              <NavLink to="/payment">
+              <Button className="" text="Checkout"  />
+              </NavLink>
+              
               </div>
             ]}
             className="blue-grey darken-1"
