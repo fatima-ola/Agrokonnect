@@ -27,8 +27,6 @@ const App = () => {
          }else if(profile.data().category === 'Buyer'){
           setUser(profile.data().firstname || profile.data().fullname);
          }
-        // setUser(profile.data().firstname || profile.data().fullname);
-        // console.log(profile.data().category)
        }
       } else{
         setUser('');
@@ -60,7 +58,7 @@ const App = () => {
 
         <Route exact path="/payment">
           <PaymentPage />
-
+        </Route>
         <Route exact path="/Userdashboard">
           <UserDashBoard displayName={user}  handleLogout={handleLogout}/>
         </Route>

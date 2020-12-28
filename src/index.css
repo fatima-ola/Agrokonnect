@@ -513,3 +513,8 @@ font-weight: bold;
 }
 /**update profile end**/
 
+/**payment page start**/
+[type="checkbox"]:not(:checked){
+  position: static!important;
+}
+/**payment page ends**/
