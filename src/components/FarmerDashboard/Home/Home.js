@@ -1,11 +1,26 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import NavBar from './../Navbar/NavBar';
 import UpdateProfile from './../../UpdateProfile/index';
+import UpdateProducts from './../../UploadProducts/index';
+import ProductsUploaded from './../../ProductsUploaded';
 import Footer from '../../Footer/index';
 import {Tabs, Tab} from 'react-materialize';
+import {firestore} from '../../../config/firebase';
+import { useHistory } from 'react-router-dom';
+
 
 const Home = (props) => {
   const {handleLogout, displayName} = props;
+  const history = useHistory();
+
+  const uid = localStorage.getItem('uid');
+
+    useEffect(()=>{
+      if(!uid){
+          history.push('/login')
+      }
+    }, []);
+  
     return(
         <div>
        <NavBar handleLogout={handleLogout} displayName={displayName}/>
@@ -48,10 +63,22 @@ const Home = (props) => {
         responsiveThreshold: Infinity,
         swipeable: false
         }}
-        title="Upload Products"
+        title="Products"
         className="section-info"
         >
-        Test 3
+        <UpdateProducts />
+        </Tab>
+        <Tab
+        options={{
+        duration: 300,
+        onShow: null,
+        responsiveThreshold: Infinity,
+        swipeable: false
+        }}
+        title="Products Uploaded "
+        className="section-info"
+        >
+        <ProductsUploaded />
         </Tab>
         </Tabs>
        <div className='shop-foot'>

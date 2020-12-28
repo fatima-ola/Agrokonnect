@@ -50,7 +50,7 @@ const Index = () => {
 
     useEffect(()=>{
         if(!uid){
-            history.push('/')
+            history.push('/login')
         }
     }, []);
 
