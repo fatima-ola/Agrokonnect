@@ -1,8 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Input from '../TextInput/index';
+import {TextInput} from 'react-materialize';
 import Button from '../Button/index';
 import {firestore} from '../../config/firebase';
-import { useHistory } from 'react-router-dom';
+
 
 const Index = () => {
 
@@ -11,17 +12,8 @@ const Index = () => {
     const [productName, setProductName] = useState('');
     const [productPrice, setProductPrice] = useState('');
     const [productQty, setProductQty] = useState('');
-    const history = useHistory();
-
+    
     const uid = localStorage.getItem('uid');
-
-    useEffect(()=>{
-        if(!uid){
-            history.push('/')
-        }
-    }, []);
-
-
 
     const handleChange = (e) => {
         const {name, value} = e.currentTarget;
@@ -29,7 +21,7 @@ const Index = () => {
             setProductImage(value);
         }else if (name === 'productName'){
             setProductName(value);
-        }else if(name === '[productPrice'){
+        }else if(name === 'productPrice'){
             setProductPrice(value);
         }else if (name === 'productQty'){
             setProductQty(value)
@@ -55,6 +47,8 @@ const Index = () => {
     
       const handleDelete = (e) => {
         e.preventDefault();
+        // const product = firestore.collection('products').doc(uid);
+        // product.delete
       }
 
     return (
@@ -62,7 +56,7 @@ const Index = () => {
             <h4 className="center-align">Upload Product</h4>
             <form >
                <div className="update">
-                <Input type="file" name="productImage" label="Product Image" value={productImage} handleChange={handleChange} placeholder="Upload Product Image"/>
+                <TextInput id="TextInput-4" label="Product Image" type="file" name="productImage" value={productImage} handleChange={handleChange} />
 
                 <Input type="text" name="productName" label="Product Name" value={productName} handleChange={handleChange} placeholder="Enter Product Name"/>
 

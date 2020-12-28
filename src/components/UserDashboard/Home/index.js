@@ -1,25 +1,31 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Navbar from '../Navbar';
 import Products from '../../Products/index';
 import Footer from '../../Footer/index';
 import {Tabs, Tab} from 'react-materialize';
+import {firestore} from './../../../config/firebase';
+import {useHistory} from 'react-router-dom';
+
 
 
 const Index = (props) => {
   const {handleLogout, displayName} = props;
+  const history = useHistory();
+
+  const uid = localStorage.getItem('uid');
+
+    useEffect(()=>{
+      if(!uid){
+          history.push('/')
+      }
+    }, []);
+
     return(
         <div>
        <Navbar handleLogout={handleLogout} displayName={displayName}/>
        <div className="shop-page">
          <h2 className="ping">USER'S DASHBOARD</h2>
        </div>
-       {/* <div className="bread-shop">
-       <Breadcrumb className="teal">
-                <NavLink to="/">HOME</NavLink>
-                <NavLink to="/dashboard">SHOP</NavLink>
-                <NavLink to="/cart">CART PAGE</NavLink>
-       </Breadcrumb>
-       </div> */}
        <Tabs className="tab-demo z-depth-1">
         <Tab
         options={{
