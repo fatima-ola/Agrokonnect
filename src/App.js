@@ -52,6 +52,9 @@ const App = () => {
         <Route exact path="/login">
           <Login />
         </Route>
+        <Route exact path="/dashboard">
+          <UserDashBoard />
+        </Route>
         <Route exact path="/Userdashboard">
           <UserDashBoard displayName={user}  handleLogout={handleLogout}/>
         </Route>
@@ -65,8 +68,8 @@ const App = () => {
     </BrowserRouter>
   
 
-  );
-};
+  )
+}
 
 export default App;
 

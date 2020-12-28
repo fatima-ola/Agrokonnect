@@ -3,9 +3,8 @@ import {NavLink, useHistory} from 'react-router-dom';
 import Input from '../TextInput/index';
 import {Checkbox} from 'react-materialize';
 import Button from '../Button/index';
-
-
 import {auth, firestore, googleProvider, facebookProvider} from '../../config/firebase'
+
 
 const Index = () => {
 // useState to update the change in state
