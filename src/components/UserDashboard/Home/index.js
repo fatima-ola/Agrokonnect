@@ -1,24 +1,15 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Navbar from '../Navbar';
 import Products from '../../Products/index';
 import Footer from '../../Footer/index';
 import {Tabs, Tab} from 'react-materialize';
-import {firestore} from './../../../config/firebase';
-import {useHistory} from 'react-router-dom';
+
 
 
 
 const Index = (props) => {
   const {handleLogout, displayName} = props;
-  const history = useHistory();
-
-  const uid = localStorage.getItem('uid');
-
-    useEffect(()=>{
-      if(!uid){
-          history.push('/')
-      }
-    }, []);
+ 
 
     return(
         <div>
