@@ -28,7 +28,7 @@ const NavBar =(props)=> {
             className="white z-depth-1"
             >
             
-            <NavLink to="/" className="black-text">
+            <NavLink to="" className="black-text" style={{backgroundColor: "transparent"}}>
             Welcome Farmer {displayName},
             </NavLink>
             <a href="#home" className="header-search">

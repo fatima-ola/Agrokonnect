@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from '../Navbar';
 import Products from '../../Products/index';
-import Cartpage from '../../Cartpage'
+import Cartpage from '../../Cartpage';
+import PaymentPage from './../PaymentPage/index';
 import Footer from '../../Footer/index';
 import {Tabs, Tab} from 'react-materialize';
 
@@ -26,6 +27,7 @@ const Index = (props) => {
         responsiveThreshold: Infinity,
         swipeable: false
         }}
+        id="home"
         title="Home"
         className="section-info"
         >
@@ -41,6 +43,7 @@ const Index = (props) => {
         responsiveThreshold: Infinity,
         swipeable: false
         }}
+        id="shop"
         title="SHOP"
         className="section-info"
         >
@@ -58,6 +61,18 @@ const Index = (props) => {
         className="section-info"
         >
         <Cartpage />
+        </Tab>
+        <Tab
+        options={{
+        duration: 300,
+        onShow: null,
+        responsiveThreshold: Infinity,
+        swipeable: false
+        }}
+        title="CHECKOUT PAGE"
+        className="section-info"
+        >
+        <PaymentPage />
         </Tab>
         </Tabs>
        <div className='shop-foot'>

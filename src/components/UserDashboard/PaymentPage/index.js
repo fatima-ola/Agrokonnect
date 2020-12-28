@@ -1,9 +1,5 @@
 import React from 'react';
-//import CartPage from '../CartPage/index';
-import Navbar from '../Navbar';
-import Footer from '../../Footer/index';
-import {Breadcrumb, Checkbox,isChecked, Row, Col, Collection, CollectionItem} from 'react-materialize';
-import {NavLink} from 'react-router-dom';
+import {Checkbox,isChecked, Row, Col, Collection, CollectionItem} from 'react-materialize';
 import TextInput from '../../TextInput/index';
 
 
