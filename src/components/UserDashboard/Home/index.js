@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar';
 import Products from '../../Products/index';
+import Cartpage from '../../Cartpage'
 import Footer from '../../Footer/index';
 import {Tabs, Tab} from 'react-materialize';
 
@@ -56,12 +57,9 @@ const Index = (props) => {
         title="CART PAGE"
         className="section-info"
         >
-        Cart Page
+        <Cartpage />
         </Tab>
         </Tabs>
-       <div>
-       
-       </div>
        <div className='shop-foot'>
        <Footer />
        </div>

@@ -7,7 +7,6 @@ import Benefit from '../Benefit/Benefit'
 import Footer from '../Footer/index'
 import Clients from '../Clients/index';
 import Tabs from '../Tabs/index';
-import Cartpage from '../Cartpage/index'
 
 const Index =()=> {
     return (
@@ -24,9 +23,7 @@ const Index =()=> {
            <Tabs />
            </div>           
             <Clients />
-           <Benefit />
-           <Cartpage />
-           <Footer />  
+           <Benefit />  
            <Footer /> 
         </div>
     )
