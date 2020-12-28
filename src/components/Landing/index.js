@@ -27,6 +27,7 @@ const Index =()=> {
            <Benefit />
            <Cartpage />
            <Footer />  
+           <Footer /> 
         </div>
     )
       

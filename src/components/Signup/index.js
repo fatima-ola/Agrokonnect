@@ -1,14 +1,14 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {NavLink, useHistory} from 'react-router-dom';
 import Input from '../TextInput/index';
 import {Checkbox} from 'react-materialize';
 import Button from '../Button/index';
-
-
 import {auth, firestore, googleProvider, facebookProvider} from '../../config/firebase'
+
 
 const Index = () => {
 // useState to update the change in state
+        const [areas, setAreas] = useState([]);         
         const [firstname, setFirstName] = useState('');
         const [lastname, setLastName] = useState('');
         const [email, setEmail] = useState('');
@@ -19,6 +19,17 @@ const Index = () => {
         const [errorPassword, setErrorPassword] = useState('');
         const [errorMessage, setErrorMessage] = useState('');
         const history = useHistory();
+        
+        const locationApi = 'https://gist.githubusercontent.com/segebee/7dde9de8e70a207e6e19/raw/90c91f7318d67c9534e3a4d74e4bd755b144e01e/gistfile1.txt';
+
+        useEffect(() => {
+            const fetchApi = async () =>{
+                const data = await fetch(locationApi);
+                const response = await data.json();
+                setAreas(response);
+            }
+            fetchApi()
+        }, [])
         
 
 // function to handle changes
@@ -39,9 +50,6 @@ const Index = () => {
                 setCategory(value)
             }
         }
-
-
-        
 
             // handlekeyUp function
             const handleKeyUp = () =>{
@@ -168,7 +176,7 @@ const handleFacebook = async (e) => {
                      placeholder="Enter Email Address"
                      type="email" 
                      name="email"
-                     label="Email Add"
+                     label="Email Address"
                      iconName="email"
                      value={email}
                      handleChange={handleChange}
@@ -190,19 +198,12 @@ const handleFacebook = async (e) => {
 
                     />
                    
-                   
-                   
-                    <Input
-                     placeholder="Location"
-                     type="text" 
-                     name="defaultlocation"
-                     label="Location"
-                     iconName="home"
-                     value={defaultLocation}
-                     handleChange={handleChange}
-                     handleKeyUp={handleKeyUp}
-
-                    />
+                    <label className="info">Location</label>
+                    <select className="browser-default" type="text" name="defaultlocation" value={defaultLocation} onChange={handleChange} handleKeyUp={handleKeyUp}>
+                    {areas.map((area)=>(
+                        <option key={area.state.id} value={area.state.name}>{area.state.name}</option>
+                    ))}
+                    </select> 
                     
                     <label>Category</label> 
                     <select className="browser-default" type="text" name="category" value={category} onChange={handleChange} handleKeyUp={handleKeyUp} >
