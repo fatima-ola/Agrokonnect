@@ -17,7 +17,7 @@ const Index = () => {
 
     const handleChange = (e) => {
         const {name, value} = e.currentTarget;
-        if(e.target.files[0] ){
+        if(name==="image" ){
             setImage(e.target.files[0]);
         }else if (name === 'productName'){
             setProductName(value);
@@ -25,53 +25,64 @@ const Index = () => {
             setProductPrice(value);
         }else if (name === 'productQty'){
             setProductQty(value)
-        }    
+        }  
        
+        // console.log(e.target.files[0].name)
+    
     };
 
     const handleAdd = (e) => {
+
         e.preventDefault();
+
         try {
         firestore.collection('products').add({
             uid,
-            image,
+            image: image.name,
             productName,
             productPrice,
             productQty
         })
-        } catch (error) {
-            
-        }
-      };
+        const uploadTask = storage.ref(`/images/${image.name}`).put(image);
+        uploadTask.on("state_changed", console.log, console.error, () => {
+            storage
+            .ref("images")
+            .child(image.name)
+            .getDownloadURL()
+            .then((url) => {
+                setImage(null);
+                setUrl(url);
+            });
+        });
 
-    
-      const handleUpload = () => {
-        // const uploadTask = storage.ref(`images/${image.name}`).put(image);
-        // uploadTask.on(
-        //     "state_changed",
-        //     snapshot => {},
-        //     error => {
-        //         console.log(error);
-        //     },
-        //     () => {
-        //         storage
-        //         .ref("images")
-        //         .child(image.name)
-        //         .getDownloadURL()
-        //         .then(url => {
-        //             setUrl(url);
-        //             setImage(null)
-        //         });
-        //     }
-        // );
+        } catch (error) {
+           console.log(error) 
+        }
+
       };
+      console.log(url);
+    
+    //   const handleUpload = (e) => {
+    //     e.preventDefault();
+    // const uploadTask = storage.ref(`/images/${image.name}`).put(image);
+    // uploadTask.on("state_changed", console.log, console.error, () => {
+    //   storage
+    //     .ref("images")
+    //     .child(image.name)
+    //     .getDownloadURL()
+    //     .then((url) => {
+    //       setImage(null);
+    //       setUrl(url);
+    //     });
+    // });
+    //   };
 
     return (
         <div>    
             <h4 className="center-align">Upload Product</h4>
             <form >
                <div className="update">
-                <TextInput  label="Product Image" type="file" name="image"  onChange={handleChange} onClick={handleUpload}/>
+                <TextInput  label="Product Image" type="file" name="image"  onChange={handleChange} />
 
                 <Input type="text" name="productName" label="Product Name" value={productName} handleChange={handleChange} placeholder="Enter Product Name"/>
 

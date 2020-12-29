@@ -85,6 +85,13 @@ a{
   font-weight: bold !important;
 }
 
+
+@media only screen and (max-width: 768px) and (min-width: 320px){
+  .highqty{
+    margin-top: 30px;
+  }
+ }
+
 /* Herosection ends */
 
 /* Benefit styling starts */
