@@ -202,7 +202,7 @@ a{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 450px;
+  height:auto;
   margin-top: 5% !important;
   padding: 7% 5% 3% 5%!important;
 }

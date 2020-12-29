@@ -1,14 +1,12 @@
 import React, {useState} from 'react';
 import Input from '../TextInput/index';
-import {TextInput} from 'react-materialize';
 import Button from '../Button/index';
-import {firestore, storage} from '../../config/firebase';
+import {firestore} from '../../config/firebase';
 
 
 const Index = () => {
 
     const [image, setImage] = useState(null);
-    const [url, setUrl] = useState("");
     const [productName, setProductName] = useState('');
     const [productPrice, setProductPrice] = useState('');
     const [productQty, setProductQty] = useState('');
@@ -44,35 +42,12 @@ const Index = () => {
         }
       };
 
-    
-      const handleUpload = () => {
-        // const uploadTask = storage.ref(`images/${image.name}`).put(image);
-        // uploadTask.on(
-        //     "state_changed",
-        //     snapshot => {},
-        //     error => {
-        //         console.log(error);
-        //     },
-        //     () => {
-        //         storage
-        //         .ref("images")
-        //         .child(image.name)
-        //         .getDownloadURL()
-        //         .then(url => {
-        //             setUrl(url);
-        //             setImage(null)
-        //         });
-        //     }
-        // );
-      };
 
     return (
         <div>    
             <h4 className="center-align">Upload Product</h4>
             <form >
                <div className="update">
-                <TextInput  label="Product Image" type="file" name="image"  onChange={handleChange} onClick={handleUpload}/>
-
                 <Input type="text" name="productName" label="Product Name" value={productName} handleChange={handleChange} placeholder="Enter Product Name"/>
 
                 <Input type="text" name="productPrice" label="Product Price" value={productPrice} handleChange={handleChange} placeholder="Enter Product Price"/>

@@ -6,7 +6,7 @@ export default function About() {
         <div className="parent-div">
             <Row>
                 <Col m={6} s={12}>
-                    <img src="/orange.jpg" alt="fruit" className="fruit-img center-align"/>
+                    <img src="/orange.jpg" alt="fruit" className="fruit-img center-align responsive-img"/>
                 
                 </Col>
                 <Col m={6} s={12}>
