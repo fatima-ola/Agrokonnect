@@ -1,7 +1,7 @@
 import React from 'react';
 import 'materialize-css';
 import Button from '../Button/index'
-import { Navbar, Icon,Dropdown, Row, Col} from 'react-materialize';
+import { Navbar, Icon,Dropdown} from 'react-materialize';
 import {NavLink} from 'react-router-dom'
 
 
@@ -74,12 +74,12 @@ const Index =()=> {
 
                <div className="carttable-row">
                 <img src="https://livedemo00.template-help.com/wt_prod-10492/theme/images/product-mini-4-146x132.png" alt="orange-img" className=" cartoption-image"  />
-                <h5 className="dropdown-margin">Oranges <br/> #100.00 <br/> <p className="go-to-cart-p">Add to Cart <img src="https://img.icons8.com/android/2x/shopping-cart.png" alt="cart-image" className="cartimage-icon" /></p></h5>
+                <h5 className="dropdown-margin">Oranges <br/> #100.00 <br/> <p className="go-to-cart-p">Add to Cart <img src="https://img.icons8.com/android/2x/shopping-cart.png" alt="cart-pic" className="cartimage-icon" /></p></h5>
                 
                 </div>
                 <div className="carttable-row">
                 <img src="https://livedemo00.template-help.com/wt_prod-10492/theme/images/product-mini-5-146x132.png" alt="orange-img" className=" cartoption-image"  />
-                <h5  className="dropdown-margin">Bananas <br/> #120.00 <br/> <p className="go-to-cart-p">Add to Cart <img src="https://img.icons8.com/android/2x/shopping-cart.png" alt="cart-image" className="cartimage-icon" /> </p></h5>
+                <h5  className="dropdown-margin">Bananas <br/> #120.00 <br/> <p className="go-to-cart-p">Add to Cart <img src="https://img.icons8.com/android/2x/shopping-cart.png" alt="cart-pic" className="cartimage-icon" /> </p></h5>
                 </div>
 
                </div>

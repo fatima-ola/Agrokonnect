@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Input from '../TextInput/index';
 import Button from '../Button/index';
 import {firestore} from '../../config/firebase';
-import { useHistory } from 'react-router-dom';
+
 
 const Index = () => {
 
@@ -17,7 +17,7 @@ const Index = () => {
     const [acctname, setAcctname] = useState('');
     const [acctnumber, setAcctnumber] = useState('');
     const [bankname, setBankname] = useState('');
-    const history = useHistory();
+  
 
     const uid = localStorage.getItem('uid');
 
@@ -47,12 +47,6 @@ const Index = () => {
         fetchBankApi()  
     }, [])
 
-
-    useEffect(()=>{
-        if(!uid){
-            history.push('/login')
-        }
-    }, []);
 
   
     useEffect(() => {

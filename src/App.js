@@ -5,9 +5,6 @@ import Landing from './components/Landing/index';
 import Signup from './components/Signup/index';
 import Login from './components/Login/index';
 import UserDashBoard from './components/UserDashboard/Home/index';
-
-import PaymentPage from './components/UserDashboard/PaymentPage/index';
-
 import FarmerDashboard from './components/FarmerDashboard/Home/Home';
 import {auth, firestore} from './config/firebase';
 import UpdateProfile from './components/UpdateProfile/index'
@@ -54,10 +51,6 @@ const App = () => {
         </Route>
         <Route exact path="/dashboard">
           <UserDashBoard />
-        </Route>
-
-        <Route exact path="/payment">
-          <PaymentPage />
         </Route>
         <Route exact path="/Userdashboard">
           <UserDashBoard displayName={user}  handleLogout={handleLogout}/>
