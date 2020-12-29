@@ -60,7 +60,7 @@ const App = () => {
 
         <Route exact path="/payment">
           <PaymentPage />
-
+        </Route>
         <Route exact path="/Userdashboard">
           <UserDashBoard displayName={user}  handleLogout={handleLogout}/>
         </Route>
