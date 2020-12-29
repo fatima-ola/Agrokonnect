@@ -5,9 +5,6 @@ import Landing from './components/Landing/index';
 import Signup from './components/Signup/index';
 import Login from './components/Login/index';
 import UserDashBoard from './components/UserDashboard/Home/index';
-
-import PaymentPage from './components/UserDashboard/PaymentPage/index';
-
 import FarmerDashboard from './components/FarmerDashboard/Home/Home';
 import {auth, firestore} from './config/firebase';
 import UpdateProfile from './components/UpdateProfile/index'
@@ -27,8 +24,6 @@ const App = () => {
          }else if(profile.data().category === 'Buyer'){
           setUser(profile.data().firstname || profile.data().fullname);
          }
-        // setUser(profile.data().firstname || profile.data().fullname);
-        // console.log(profile.data().category)
        }
       } else{
         setUser('');
@@ -57,10 +52,6 @@ const App = () => {
         <Route exact path="/dashboard">
           <UserDashBoard />
         </Route>
-
-        <Route exact path="/payment">
-          <PaymentPage />
-
         <Route exact path="/Userdashboard">
           <UserDashBoard displayName={user}  handleLogout={handleLogout}/>
         </Route>

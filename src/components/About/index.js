@@ -13,7 +13,7 @@ export default function About() {
                     <div className="child-div">
                     <h6 className=" green-text" id="distinction"> Distinctions from AgroKonnect</h6>   
                     <h4> ABOUT US </h4> 
-                    <p className="center-align p-text"> A fast growing e-commerce start-up, where farmers and masses
+                    <p className="center-align p-text"> We are a fast growing e-commerce start-up, from our online platform called <b>agrokonnet,</b> farmers and masses
                          are provided with the platform to buy and sell organic,
                           fresh and consumable agricultural produce.
                     </p> 

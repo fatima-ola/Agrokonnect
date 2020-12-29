@@ -28,11 +28,8 @@ const Index =(props)=> {
             className="white z-depth-1"
             >
             
-            <NavLink to="/" className="black-text">
-            Welcome {displayName}
-            </NavLink>
-            <NavLink to="/signin" className="black-text">
-                Shop
+            <NavLink to="" className="black-text home" style={{backgroundColor: "transparent"}}>
+            Welcome {displayName} 
             </NavLink>
             <a href="#home" className="header-search">
                 <Icon className="material-icons">search</Icon>
@@ -42,7 +39,7 @@ const Index =(props)=> {
             </a>
             
             <NavLink onClick={handleLogout} to="/" className="regbtn">
-                <Button text="Logout" className="thebtn" />
+                <Button text="Logout" className="thebtn" style={{backgroundColor: "transparent"}}/>
             </NavLink>
             </Navbar>
         

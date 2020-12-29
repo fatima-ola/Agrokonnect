@@ -357,7 +357,7 @@ font-weight: bold;
 }
 .second-footer{
   background-color: whitesmoke;
-  margin-top: 10%;
+  margin-top: 3%;
   padding-top: 3%;
   padding-left: 10%;
   height: 130px !important;
@@ -442,7 +442,7 @@ font-weight: bold;
   padding-bottom: 15px;
 }
 .cart-table{
-  margin: 5% 10%;
+  margin: 5% 10% 3% 10%;
   border: 0.5px solid #e1e1e1;
 }
 .carttable-row{
@@ -513,3 +513,14 @@ font-weight: bold;
 }
 /**update profile end**/
 
+/**payment page start**/
+[type="checkbox"]:not(:checked){
+  position: static!important;
+}
+/**payment page ends**/
+
+/**Userdashboard start**/
+a.home{
+  cursor: default;
+}
+/**userdashboard ends**/
