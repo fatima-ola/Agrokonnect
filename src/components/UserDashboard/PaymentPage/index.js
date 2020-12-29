@@ -1,26 +1,12 @@
 import React from 'react';
-//import CartPage from '../CartPage/index';
-import Navbar from '../Navbar';
-import Footer from '../../Footer/index';
-import {Breadcrumb, Checkbox,isChecked, Row, Col, Collection, CollectionItem} from 'react-materialize';
-import {NavLink} from 'react-router-dom';
+import {Checkbox,isChecked, Row, Col, Collection, CollectionItem} from 'react-materialize';
 import TextInput from '../../TextInput/index';
 
 
 const Index = () => {
     return(
-        <div>
-            <Navbar />
-       <div className="shop-page">
-         <h2 className="ping">CHECKOUT</h2>
-       </div>
-       <div className="bread-shop">
-       <Breadcrumb className="teal">
-                <NavLink to="/">HOME</NavLink>
-                <NavLink to="/dashboard">SHOP</NavLink>
-                <NavLink to="/checkout">CHECKOUT</NavLink>
-       </Breadcrumb>
-       </div>
+        <div className="container">
+    
        <div className="payment-box">
        <form className="item">
            <h3>BILLING ADDRESS</h3>
@@ -204,10 +190,8 @@ const Index = () => {
         </div>
       </div>
 
-              </div>
-       <div className='shop-foot'>
-       <Footer />
-       </div>
+        </div>
+    
         </div>
     )
 };

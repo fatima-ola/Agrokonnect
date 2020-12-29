@@ -7,8 +7,8 @@ import {firestore, storage} from '../../config/firebase';
 
 const Index = () => {
 
-    // const {handleLogout, displayName} = props;
-    const [productImage, setProductImage] = useState('');
+    const [image, setImage] = useState(null);
+    const [url, setUrl] = useState("");
     const [productName, setProductName] = useState('');
     const [productPrice, setProductPrice] = useState('');
     const [productQty, setProductQty] = useState('');
@@ -17,24 +17,24 @@ const Index = () => {
 
     const handleChange = (e) => {
         const {name, value} = e.currentTarget;
-        if(name === 'productImage'){
-            setProductImage(value);
+        if(e.target.files[0] ){
+            setImage(e.target.files[0]);
         }else if (name === 'productName'){
             setProductName(value);
         }else if(name === 'productPrice'){
             setProductPrice(value);
         }else if (name === 'productQty'){
             setProductQty(value)
-        }
+        }    
        
-    }
+    };
 
     const handleAdd = (e) => {
         e.preventDefault();
         try {
-        const data = firestore.collection('products').add({
+        firestore.collection('products').add({
             uid,
-            productImage,
+            image,
             productName,
             productPrice,
             productQty
@@ -43,14 +43,35 @@ const Index = () => {
             
         }
       };
+
     
+      const handleUpload = () => {
+        // const uploadTask = storage.ref(`images/${image.name}`).put(image);
+        // uploadTask.on(
+        //     "state_changed",
+        //     snapshot => {},
+        //     error => {
+        //         console.log(error);
+        //     },
+        //     () => {
+        //         storage
+        //         .ref("images")
+        //         .child(image.name)
+        //         .getDownloadURL()
+        //         .then(url => {
+        //             setUrl(url);
+        //             setImage(null)
+        //         });
+        //     }
+        // );
+      };
 
     return (
         <div>    
             <h4 className="center-align">Upload Product</h4>
             <form >
                <div className="update">
-                <TextInput id="TextInput-4" label="Product Image" type="file" name="productImage" value={productImage} handleChange={handleChange} />
+                <TextInput  label="Product Image" type="file" name="image"  onChange={handleChange} onClick={handleUpload}/>
 
                 <Input type="text" name="productName" label="Product Name" value={productName} handleChange={handleChange} placeholder="Enter Product Name"/>
 
@@ -59,9 +80,8 @@ const Index = () => {
                 <Input type="text" name="productQty" label="Product Quantity" value={productQty} handleChange={handleChange} placeholder="Enter Product Quantity"/>
 
                 <Button text="Add Product" handleClick={handleAdd} className="buttonLogin blue" />
-                
                 </div>
-            </form>                                              
+            </form>                                             
         </div>
     )
 }

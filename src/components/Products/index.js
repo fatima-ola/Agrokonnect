@@ -8,7 +8,7 @@ import MaterialButton from '../MaterialButton/index';
 
 const Index = () => {
 return(
- <div className="container">         
+ <div className="container" id="feature">         
     <Row>
         <Col
           m={3}
