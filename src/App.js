@@ -7,7 +7,8 @@ import Login from './components/Login/index';
 import UserDashBoard from './components/UserDashboard/Home/index';
 import FarmerDashboard from './components/FarmerDashboard/Home/Home';
 import {auth, firestore} from './config/firebase';
-import UpdateProfile from './components/UpdateProfile/index'
+import UpdateProfile from './components/UpdateProfile/index';
+import GeneralProfileUpdate from './components/GeneralProfileUpdate'
 
 
 
@@ -60,7 +61,9 @@ const App = () => {
         </Route>
         <Route exact path="/updateprofile">
           <UpdateProfile />
-
+        </Route>
+        <Route exact path="/GeneralProfileUpdate">
+          <GeneralProfileUpdate displayName={user} />
         </Route>
       </Switch>
     </BrowserRouter>

@@ -5,12 +5,12 @@ import 'firebase/firestore'
 import "firebase/storage";
 
 let firebaseConfig = {
-    apiKey: "AIzaSyDMOotKS4360-TGRxmjbDnuaLUiVlhbpHw",
-    authDomain: "agrokonnectapp.firebaseapp.com",
-    projectId: "agrokonnectapp",
-    storageBucket: "agrokonnectapp.appspot.com",
-    messagingSenderId: "337831597598",
-    appId: "1:337831597598:web:a40be83c67fd5ba8d2400f"
+  apiKey: "AIzaSyB5dzXyDRhaZa9l2yarBcITkO0fCXTdF_U",
+  authDomain: "agrokonnectproject.firebaseapp.com",
+  projectId: "agrokonnectproject",
+  storageBucket: "agrokonnectproject.appspot.com",
+  messagingSenderId: "993454539899",
+  appId: "1:993454539899:web:4893022cc184d5fea5cede"
   };
 
   // Initialize Firebase

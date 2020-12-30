@@ -65,7 +65,7 @@ const handleSubmit = async (e) =>{
     try {
         if (!firstname || !lastname || !email || !password || !defaultLocation || !category){
         return setErrorMessage ('All fields are required')
-    } 
+    }
     const {user} = await auth.createUserWithEmailAndPassword(email, password);
     // console.log(user);
 

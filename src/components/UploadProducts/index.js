@@ -15,8 +15,8 @@ const Index = () => {
 
     const handleChange = (e) => {
         const {name, value} = e.currentTarget;
-        if(e.target.files[0] ){
-            setImage(e.target.files[0]);
+        if(name === 'image' ){
+            setImage(value);
         }else if (name === 'productName'){
             setProductName(value);
         }else if(name === 'productPrice'){
