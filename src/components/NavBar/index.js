@@ -28,7 +28,7 @@ const Index =()=> {
             }}
             className="white z-depth-1"
             >
-            <a to="#herosection" className="black-text">
+            <a href="#herosection" className="black-text">
                 Home
             </a>
             <a href="#about" className="black-text">
