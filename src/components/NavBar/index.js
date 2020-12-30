@@ -28,9 +28,9 @@ const Index =()=> {
             }}
             className="white z-depth-1"
             >
-            <NavLink to="/" className="black-text">
+            <a to="#herosection" className="black-text">
                 Home
-            </NavLink>
+            </a>
             <a href="#about" className="black-text">
                 About
             </a>

@@ -28,12 +28,22 @@ nav a{
   padding: 15px 10px;
 }
 
+.shopbtn{
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
 .thebtn{
   padding-top: 20px;
 }
 
 a{
   text-transform: uppercase;
+}
+.sidenav-overlay{
+  background-color: white!important;
+  position: relative!important;
+  z-index: 0;
 }
 /**Navabar styling end**/
 

@@ -8,7 +8,7 @@ import {  Slide, Slider, Caption, Button} from 'react-materialize'
 
 const Index = () => {
     return (
-        <div>     
+        <div id="herosection">     
     <Slider
   fullscreen={false}
   options={{
@@ -29,12 +29,12 @@ const Index = () => {
       <h6 className="button-h6">
         GROWN WITH LOVE
       </h6>
-      <NavLink to="/signup" className="regbtn"> 
+      <NavLink to="/signup" className="shopbtn"> 
       <Button
         large
         node="a"
         style={{
-          marginRight: '5px'
+          marginRight: '15px'
         }}
         waves="light"
         className="hero-button"
@@ -56,7 +56,7 @@ const Index = () => {
       <h6 className="button-h6">
         WITHOUT HARMFUL ADDITIVES
       </h6>
-      <NavLink to="/signup" className="regbtn"> 
+      <NavLink to="/signup" className="shopbtn"> 
           <Button 
         large
         node="a"
@@ -82,7 +82,7 @@ const Index = () => {
       <h6 className="button-h6">
         WITH LOTS OF VITAMINS
       </h6>
-      <NavLink to="/signup" className="regbtn"> 
+      <NavLink to="/signup" className="shopbtn"> 
         <Button
         large
         node="a"
