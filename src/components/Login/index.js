@@ -41,6 +41,8 @@ const Index = () => {
                     history.push('/Farmerdashboard')
                   }else if(profile.data().category === 'Buyer'){
                     history.push('/Userdashboard')
+                  }else{
+                      history.push('/GeneralProfileUpdate')
                   }
                  // setUser(profile.data().firstname || profile.data().fullname);
                 //  console.log(profile.data().category)
